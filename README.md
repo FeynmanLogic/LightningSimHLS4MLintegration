@@ -99,7 +99,7 @@ The published LightningSim Conda package currently provides **Linux** binaries o
 
 As a result, while the helper script functions correctly, LightningSim itself cannot currently be installed on Windows using the published Conda package.
 
-Validation on a Linux environment is planned.
+Validation on a Linux environment RHEL server was done.
 
 ---
 
