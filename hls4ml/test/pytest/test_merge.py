@@ -1,0 +1,170 @@
+from pathlib import Path
+
+import numpy as np
+import pytest
+import tensorflow as tf
+from tensorflow.keras.layers import Add, Average, Concatenate, Dot, Input, Maximum, Minimum, Multiply, Subtract
+
+import hls4ml
+
+test_root_path = Path(__file__).parent
+
+
+@pytest.mark.parametrize('merge_layer', [Add, Average, Maximum, Minimum, Multiply, Subtract])
+@pytest.mark.parametrize('io_type', ['io_parallel', 'io_stream'])
+@pytest.mark.parametrize('backend', ['Vivado', 'Vitis', 'Quartus', 'oneAPI'])
+@pytest.mark.parametrize('swap_inputs', [True, False])
+def test_merge(test_case_id, merge_layer, io_type, backend, swap_inputs):
+    input_shape = (10, 10, 3)
+
+    in1 = Input(shape=input_shape, name='inp1')
+    in2 = Input(shape=input_shape, name='inp2')
+    if swap_inputs:
+        out = merge_layer()([in2, in1])
+    else:
+        out = merge_layer()([in1, in2])
+
+    model = tf.keras.models.Model(inputs=[in1, in2], outputs=out)
+    model.compile()
+
+    output_dir = str(test_root_path / test_case_id)
+
+    config = {'Model': {'Precision': 'fixed<32,16>', 'ReuseFactor': 1}, 'LayerName': {'inp2': {'Precision': 'fixed<32,15>'}}}
+
+    hls_model = hls4ml.converters.convert_from_keras_model(
+        model, hls_config=config, output_dir=output_dir, io_type=io_type, backend=backend
+    )
+    hls_model.compile()
+
+    X_input1 = np.random.rand(100, *input_shape)
+    X_input2 = np.random.rand(100, *input_shape)
+
+    keras_prediction = model.predict([X_input1, X_input2])
+    hls_prediction = hls_model.predict([X_input1, X_input2]).reshape(keras_prediction.shape)
+
+    np.testing.assert_allclose(hls_prediction, keras_prediction, rtol=0, atol=0.001)
+
+
+@pytest.mark.parametrize('axes', [1])
+@pytest.mark.parametrize('io_type', ['io_parallel'])  # No io_stream implementation yet
+@pytest.mark.parametrize('backend', ['Vivado', 'Vitis', 'Quartus', 'oneAPI'])
+def test_dot(test_case_id, axes, io_type, backend):
+    # Only 1D implemented
+    input_shape = (10,)
+
+    in1 = Input(shape=input_shape)
+    in2 = Input(shape=input_shape)
+    out = Dot(axes=axes)([in1, in2])
+
+    model = tf.keras.models.Model(inputs=[in1, in2], outputs=out)
+    model.compile()
+
+    config = hls4ml.utils.config_from_keras_model(model, default_precision='ap_fixed<32,16>')
+    output_dir = str(test_root_path / test_case_id)
+    hls_model = hls4ml.converters.convert_from_keras_model(
+        model, hls_config=config, output_dir=output_dir, io_type=io_type, backend=backend
+    )
+    hls_model.compile()
+
+    X_input1 = np.random.rand(100, *input_shape)
+    X_input2 = np.random.rand(100, *input_shape)
+
+    keras_prediction = model.predict([X_input1, X_input2])
+    hls_prediction = hls_model.predict([X_input1, X_input2]).reshape(keras_prediction.shape)
+
+    np.testing.assert_allclose(hls_prediction, keras_prediction, rtol=0, atol=0.001)
+
+
+@pytest.mark.parametrize('io_type', ['io_parallel', 'io_stream'])
+@pytest.mark.parametrize('backend', ['Vivado', 'Vitis', 'Quartus', 'oneAPI'])
+def test_concatenate1d(test_case_id, io_type, backend):
+    input_shape1 = (10,)
+    input_shape2 = (8,)
+
+    in1 = Input(shape=input_shape1)
+    in2 = Input(shape=input_shape2)
+    out = Concatenate()([in1, in2])
+
+    model = tf.keras.models.Model(inputs=[in1, in2], outputs=out)
+    model.compile()
+
+    config = hls4ml.utils.config_from_keras_model(model, default_precision='ap_fixed<32,16>')
+    output_dir = str(test_root_path / test_case_id)
+    hls_model = hls4ml.converters.convert_from_keras_model(
+        model, hls_config=config, output_dir=output_dir, io_type=io_type, backend=backend
+    )
+    hls_model.compile()
+
+    X_input1 = np.random.rand(100, *input_shape1)
+    X_input2 = np.random.rand(100, *input_shape2)
+
+    keras_prediction = model.predict([X_input1, X_input2])
+    hls_prediction = hls_model.predict([X_input1, X_input2]).reshape(keras_prediction.shape)
+
+    np.testing.assert_allclose(hls_prediction, keras_prediction, rtol=0, atol=0.001)
+
+
+@pytest.mark.parametrize('axis', [1, 2])
+@pytest.mark.parametrize('io_type', ['io_parallel', 'io_stream'])
+@pytest.mark.parametrize('backend', ['Vivado', 'Vitis', 'Quartus', 'oneAPI'])
+def test_concatenate2d(test_case_id, axis, io_type, backend):
+    input_shape1 = [10, 3]
+    input_shape2 = [10, 4]
+
+    input_shape1.insert(axis - 1, input_shape1.pop(1))
+    input_shape2.insert(axis - 1, input_shape2.pop(1))
+
+    in1 = Input(shape=input_shape1)
+    in2 = Input(shape=input_shape2)
+    out = Concatenate(axis=axis)([in1, in2])
+
+    model = tf.keras.models.Model(inputs=[in1, in2], outputs=out)
+    model.compile()
+
+    config = hls4ml.utils.config_from_keras_model(model, default_precision='ap_fixed<32,16>')
+    output_dir = str(test_root_path / test_case_id)
+    hls_model = hls4ml.converters.convert_from_keras_model(
+        model, hls_config=config, output_dir=output_dir, io_type=io_type, backend=backend
+    )
+    hls_model.compile()
+
+    X_input1 = np.random.rand(100, *input_shape1)
+    X_input2 = np.random.rand(100, *input_shape2)
+
+    keras_prediction = model.predict([X_input1, X_input2])
+    hls_prediction = hls_model.predict([X_input1, X_input2]).reshape(keras_prediction.shape)
+
+    np.testing.assert_allclose(hls_prediction, keras_prediction, rtol=0, atol=0.001)
+
+
+@pytest.mark.parametrize('axis', [1, 2, 3])
+@pytest.mark.parametrize('io_type', ['io_parallel', 'io_stream'])
+@pytest.mark.parametrize('backend', ['Vivado', 'Vitis', 'Quartus', 'oneAPI'])
+def test_concatenate3d(test_case_id, axis, io_type, backend):
+    input_shape1 = [10, 10, 3]
+    input_shape2 = [10, 10, 4]
+
+    input_shape1.insert(axis - 1, input_shape1.pop(2))
+    input_shape2.insert(axis - 1, input_shape2.pop(2))
+
+    in1 = Input(shape=input_shape1)
+    in2 = Input(shape=input_shape2)
+    out = Concatenate(axis=axis)([in1, in2])
+
+    model = tf.keras.models.Model(inputs=[in1, in2], outputs=out)
+    model.compile()
+
+    config = hls4ml.utils.config_from_keras_model(model, default_precision='ap_fixed<32,16>')
+    output_dir = str(test_root_path / test_case_id)
+    hls_model = hls4ml.converters.convert_from_keras_model(
+        model, hls_config=config, output_dir=output_dir, io_type=io_type, backend=backend
+    )
+    hls_model.compile()
+
+    X_input1 = np.random.rand(100, *input_shape1)
+    X_input2 = np.random.rand(100, *input_shape2)
+
+    keras_prediction = model.predict([X_input1, X_input2])
+    hls_prediction = hls_model.predict([X_input1, X_input2]).reshape(keras_prediction.shape)
+
+    np.testing.assert_allclose(hls_prediction, keras_prediction, rtol=0, atol=0.001)
