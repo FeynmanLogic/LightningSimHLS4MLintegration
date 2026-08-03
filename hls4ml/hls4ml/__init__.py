@@ -1,5 +1,7 @@
 from hls4ml import converters, report, utils  # noqa: F401, E402
 from .run_lightningsim import main as run_lightningsim
+from .run_fifoadvisor import main as run_fifoadvisor
+
 try:
     from ._version import version as __version__
     from ._version import version_tuple
