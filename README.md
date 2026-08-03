@@ -1,4 +1,5 @@
 # LightningSim–hls4ml Integration (Proof of Concept)
+# Version 1 of LightningSim integration and FIFOAdvisor integration is present on the master branch.
 
 ## Overview
 
