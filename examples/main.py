@@ -20,3 +20,4 @@ hls_model.build()
 
 # Launch LightningSim
 hls4ml.run_lightningsim()
+hls4ml.run_fifoadvisor()
