@@ -10,15 +10,12 @@ For each model:
 
     - Run Vitis C/RTL co-simulation
     - Record Vitis runtime
-    - Enter Vitis latency from the co-simulation report
+    - Enter Vitis latency
     - Run LightningSim
     - Record LightningSim runtime
-    - Enter LightningSim latency from the GUI
-    - Compare latency and simulation speed
-
-Results are saved to:
-
-    benchmark_results.json
+    - Enter LightningSim latency from GUI
+    - Compare latency
+    - Save results to JSON
 """
 
 import json
@@ -38,33 +35,27 @@ MODELS = [
     "KERAS_3layer_batch_norm.json",
 ]
 
-
 RESULTS_FILE = Path("benchmark_results.json")
 
 
 # ============================================================
-# JSON
+# Save results
 # ============================================================
 
 def save_results(results):
+
     with open(RESULTS_FILE, "w") as f:
         json.dump(results, f, indent=4)
 
 
 # ============================================================
-# Vitis latency input
+# Vitis latency
 # ============================================================
 
 def get_vitis_latency(model_name):
-    """
-    Ask for the latency reported by Vitis co-simulation.
-
-    This function is called ONLY after Vitis co-simulation
-    has completed.
-    """
 
     print("\n" + "=" * 70)
-    print(f"VITIS CO-SIMULATION LATENCY: {model_name}")
+    print(f"VITIS LATENCY: {model_name}")
     print("=" * 70)
 
     print(
@@ -72,8 +63,8 @@ def get_vitis_latency(model_name):
     )
 
     print(
-        "Read the latency/cycle count from the "
-        "Vitis co-simulation results."
+        "Read the latency/cycle count from "
+        "the Vitis report."
     )
 
     while True:
@@ -92,28 +83,18 @@ def get_vitis_latency(model_name):
 
 
 # ============================================================
-# LightningSim latency input
+# LightningSim latency
 # ============================================================
 
 def get_lightningsim_latency(model_name):
-    """
-    Ask for the latency reported by LightningSim GUI.
-
-    This function is called ONLY after LightningSim
-    has completed/produced its GUI results.
-    """
 
     print("\n" + "=" * 70)
     print(f"LIGHTNINGSIM LATENCY: {model_name}")
     print("=" * 70)
 
     print(
-        "\nLightningSim has completed."
-    )
-
-    print(
-        "Read the reported latency from the "
-        "LightningSim web interface."
+        "\nRead the top-level latency from "
+        "the LightningSim GUI."
     )
 
     while True:
@@ -135,14 +116,10 @@ def get_lightningsim_latency(model_name):
 # Run Vitis co-simulation
 # ============================================================
 
-def run_vitis_cosimulation(hls_model, model_name):
-    """
-    Run Vitis C/RTL co-simulation and return:
-
-        runtime_seconds
-        latency_cycles
-        status
-    """
+def run_vitis_cosimulation(
+    hls_model,
+    model_name,
+):
 
     print("\n" + "=" * 80)
     print("VITIS C/RTL CO-SIMULATION")
@@ -180,16 +157,13 @@ def run_vitis_cosimulation(hls_model, model_name):
     )
 
     print(
-        f"\n✓ Vitis co-simulation completed."
+        "\n✓ Vitis co-simulation completed."
     )
 
     print(
-        f"Runtime: {runtime:.3f} seconds"
+        f"Vitis co-simulation time: "
+        f"{runtime:.3f} seconds"
     )
-
-    # IMPORTANT:
-    # Ask for Vitis latency only AFTER co-simulation
-    # has finished.
 
     latency = get_vitis_latency(
         model_name
@@ -207,19 +181,13 @@ def run_vitis_cosimulation(hls_model, model_name):
 # ============================================================
 
 def run_lightningsim(model_name):
-    """
-    Run LightningSim through the hls4ml integration.
-
-    The modified hls4ml run_lightningsim() function is
-    responsible for launching LightningSim with --gui.
-    """
 
     print("\n" + "=" * 80)
     print("LIGHTNINGSIM")
     print("=" * 80)
 
     print(
-        "\nStarting LightningSim..."
+        "\nLaunching LightningSim..."
     )
 
     print(
@@ -230,21 +198,14 @@ def run_lightningsim(model_name):
         "http://127.0.0.1:8080"
     )
 
-    print(
-        "\nFor the remote server, make sure your SSH "
-        "port tunnel is active."
-    )
-
     start = time.perf_counter()
 
     try:
 
-        # The hls4ml integration handles:
-        #
-        #   Conda environment
-        #   solution1 discovery
-        #   --gui
-        #   LightningSim execution
+        # IMPORTANT:
+        # Your current run_lightningsim() uses
+        # subprocess.run(), so this call returns
+        # only after LightningSim finishes.
 
         hls4ml.run_lightningsim()
 
@@ -266,16 +227,18 @@ def run_lightningsim(model_name):
     )
 
     print(
-        f"\n✓ LightningSim completed."
+        "\n✓ LightningSim simulation completed."
     )
 
     print(
-        f"Runtime: {runtime:.3f} seconds"
+        f"LightningSim simulation time: "
+        f"{runtime:.3f} seconds"
     )
 
+    # --------------------------------------------------------
     # IMPORTANT:
-    # Ask for LightningSim latency ONLY AFTER
-    # LightningSim has run.
+    # Ask for latency AFTER LightningSim finishes.
+    # --------------------------------------------------------
 
     latency = get_lightningsim_latency(
         model_name
@@ -289,16 +252,13 @@ def run_lightningsim(model_name):
 
 
 # ============================================================
-# Compare results
+# Compare latency
 # ============================================================
 
 def compare_results(
     vitis,
     lightningsim,
 ):
-    """
-    Compare Vitis co-simulation and LightningSim.
-    """
 
     vitis_latency = (
         vitis["latency_cycles"]
@@ -306,14 +266,6 @@ def compare_results(
 
     lightning_latency = (
         lightningsim["latency_cycles"]
-    )
-
-    vitis_time = (
-        vitis["runtime_seconds"]
-    )
-
-    lightning_time = (
-        lightningsim["runtime_seconds"]
     )
 
     difference = (
@@ -332,33 +284,13 @@ def compare_results(
 
         error_percent = None
 
-    if lightning_time > 0:
-
-        speedup = (
-            vitis_time /
-            lightning_time
-        )
-
-    else:
-
-        speedup = None
-
-    comparison = {
-        "latency_difference_cycles":
-            difference,
-
-        "latency_error_percent":
-            error_percent,
-
-        "latency_match":
-            lightning_latency == vitis_latency,
-
-        "speedup":
-            speedup,
-    }
+    latency_match = (
+        lightning_latency ==
+        vitis_latency
+    )
 
     print("\n" + "=" * 70)
-    print("COMPARISON")
+    print("LATENCY COMPARISON")
     print("=" * 70)
 
     print(
@@ -384,23 +316,20 @@ def compare_results(
         )
 
     print(
-        f"\nVitis co-sim time:"
-        f"       {vitis_time:.3f} s"
+        f"Latency match:"
+        f"          {'YES' if latency_match else 'NO'}"
     )
 
-    print(
-        f"LightningSim time:"
-        f"       {lightning_time:.3f} s"
-    )
+    return {
+        "latency_difference_cycles":
+            difference,
 
-    if speedup is not None:
+        "latency_error_percent":
+            error_percent,
 
-        print(
-            f"Speedup:"
-            f"                {speedup:.2f}x"
-        )
-
-    return comparison
+        "latency_match":
+            latency_match,
+    }
 
 
 # ============================================================
@@ -478,11 +407,12 @@ def benchmark_model(model_name):
     )
 
     # --------------------------------------------------------
-    # Final result
+    # Return complete result
     # --------------------------------------------------------
 
     return {
         "model": model_name,
+        "status": "PASSED",
 
         "vitis_cosimulation": vitis,
 

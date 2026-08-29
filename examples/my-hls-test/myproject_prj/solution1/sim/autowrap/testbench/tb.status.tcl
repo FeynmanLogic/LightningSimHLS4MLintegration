@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

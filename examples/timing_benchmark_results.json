@@ -1,0 +1,61 @@
+{
+    "benchmark": {
+        "num_models": 3,
+        "models": [
+            "KERAS_1layer.json",
+            "KERAS_3layer.json",
+            "KERAS_3layer_batch_norm.json"
+        ],
+        "lightningsim_environment": "lightningsim"
+    },
+    "results": [
+        {
+            "model": "KERAS_1layer.json",
+            "status": "PASSED",
+            "solution": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1",
+            "vitis_cosimulation": {
+                "status": "PASSED",
+                "runtime_seconds": 222.14330021699425
+            },
+            "lightningsim": {
+                "status": "PASSED",
+                "runtime_seconds": 14.308457450009882
+            },
+            "timing_comparison": {
+                "speedup": 15.52531438089022
+            }
+        },
+        {
+            "model": "KERAS_3layer.json",
+            "status": "PASSED",
+            "solution": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1",
+            "vitis_cosimulation": {
+                "status": "PASSED",
+                "runtime_seconds": 220.86827706499025
+            },
+            "lightningsim": {
+                "status": "PASSED",
+                "runtime_seconds": 14.44011632190086
+            },
+            "timing_comparison": {
+                "speedup": 15.295463841243885
+            }
+        },
+        {
+            "model": "KERAS_3layer_batch_norm.json",
+            "status": "PASSED",
+            "solution": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1",
+            "vitis_cosimulation": {
+                "status": "PASSED",
+                "runtime_seconds": 218.45359208306763
+            },
+            "lightningsim": {
+                "status": "PASSED",
+                "runtime_seconds": 14.073779085068963
+            },
+            "timing_comparison": {
+                "speedup": 15.522027933124772
+            }
+        }
+    ]
+}

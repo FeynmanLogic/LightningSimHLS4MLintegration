@@ -1,0 +1,5 @@
+| Model                   | Vitis co-sim | LightningSim |   Speedup |
+| ----------------------- | -----------: | -----------: | --------: |
+| KERAS_1layer            |        122 s |     14.308 s | **8.53×** |
+| KERAS_3layer            |        122 s |     14.440 s | **8.45×** |
+| KERAS_3layer_batch_norm |        121 s |     14.074 s | **8.60×** |

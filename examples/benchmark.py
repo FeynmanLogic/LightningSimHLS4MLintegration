@@ -33,8 +33,6 @@ MODELS = [
     "KERAS_1layer.json",
     "KERAS_3layer.json",
     "KERAS_3layer_batch_norm.json",
-    "KERAS_conv1d.json",
-    "KERAS_dense_16x100x100x100x100x100x5.json",
 ]
 
 
@@ -42,7 +40,7 @@ MODELS = [
 # Configuration
 # ============================================================
 
-RESULTS_FILE = Path("benchmark_results.json")
+RESULTS_FILE = Path("benchmark_results_timingonly.json")
 
 # Use 100 initially to validate the workflow.
 # Increase to 1000 for the final FIFOAdvisor experiment.

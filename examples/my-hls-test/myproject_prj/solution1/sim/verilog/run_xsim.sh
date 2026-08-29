@@ -1,4 +1,0 @@
-
-/tools/software/amd/xilinx/2025.2.1/Vivado/bin/xelab xil_defaultlib.apatb_myproject_top xil_defaultlib.glbl -Oenable_linking_all_libraries  -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib "ieee_proposed=./ieee_proposed"  -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./myproject_subsystem -s myproject -debug all
-/tools/software/amd/xilinx/2025.2.1/Vivado/bin/xsim -testplusarg "UVM_VERBOSITY=UVM_NONE" -testplusarg "UVM_TESTNAME=myproject_test_lib" -testplusarg "UVM_TIMEOUT=20000000000000" --noieeewarnings myproject -tclbatch myproject.tcl -view myproject_dataflow_ana.wcfg -protoinst myproject.protoinst
-

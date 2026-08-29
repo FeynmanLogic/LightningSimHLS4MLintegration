@@ -7,5 +7,63 @@
             "KERAS_3layer_batch_norm.json"
         ]
     },
-    "results": []
+    "results": [
+        {
+            "model": "KERAS_1layer.json",
+            "status": "PASSED",
+            "vitis_cosimulation": {
+                "status": "passed",
+                "runtime_seconds": 234.32730419596191,
+                "latency_cycles": 7
+            },
+            "lightningsim": {
+                "status": "passed",
+                "runtime_seconds": 3.8535494619281963,
+                "latency_cycles": 7
+            },
+            "comparison": {
+                "latency_difference_cycles": 0,
+                "latency_error_percent": 0.0,
+                "latency_match": true
+            }
+        },
+        {
+            "model": "KERAS_3layer.json",
+            "status": "PASSED",
+            "vitis_cosimulation": {
+                "status": "passed",
+                "runtime_seconds": 218.53121110098436,
+                "latency_cycles": 7
+            },
+            "lightningsim": {
+                "status": "passed",
+                "runtime_seconds": 3.105617229011841,
+                "latency_cycles": 7
+            },
+            "comparison": {
+                "latency_difference_cycles": 0,
+                "latency_error_percent": 0.0,
+                "latency_match": true
+            }
+        },
+        {
+            "model": "KERAS_3layer_batch_norm.json",
+            "status": "PASSED",
+            "vitis_cosimulation": {
+                "status": "passed",
+                "runtime_seconds": 225.35572448989842,
+                "latency_cycles": 7
+            },
+            "lightningsim": {
+                "status": "passed",
+                "runtime_seconds": 3.092755088931881,
+                "latency_cycles": 7
+            },
+            "comparison": {
+                "latency_difference_cycles": 0,
+                "latency_error_percent": 0.0,
+                "latency_match": true
+            }
+        }
+    ]
 }

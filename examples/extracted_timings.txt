@@ -1,0 +1,37 @@
+VITIS / LIGHTNINGSIM TIMING EXTRACTION
+======================================================================
+
+MODEL: KERAS_1layer.json
+----------------------------------------------------------------------
+
+
+Vitis reported co-simulation time:
+   0h2m2s 
+    Source: Vitis co-simulation time: 0h2m2s 
+
+LightningSim time:
+    14.308 seconds
+    Source: LightningSim time: 14.308 seconds
+
+MODEL: KERAS_3layer.json
+----------------------------------------------------------------------
+
+Vitis reported co-simulation time:
+    0h2m2s seconds
+    Source: Vitis co-simulation time: 0h2m2s seconds
+
+LightningSim time:
+    14.440 seconds
+    Source: LightningSim time: 14.440 seconds
+
+MODEL: KERAS_3layer_batch_norm.json
+----------------------------------------------------------------------
+
+
+Vitis reported co-simulation time:
+    0h2m1s seconds
+    Source: Vitis co-simulation time: 0h2m1s
+LightningSim time:
+    14.074 seconds
+    Source: LightningSim time: 14.074 seconds
+

@@ -1,5 +1,0 @@
-5 warnings and 3 errors generated.
-Error while processing /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.
-clang-tidy applied 82 of 82 suggested fixes.
-Suppressed 255 warnings (250 in non-user code, 5 with check filters).
-Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

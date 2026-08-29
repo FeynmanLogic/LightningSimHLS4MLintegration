@@ -1,7 +1,0 @@
-INFO: Unable to open input/predictions file, using default input.
-0.0439453 
-0.0439453 
-0.0439453 
-0.0439453 
-0.0439453 
-INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
