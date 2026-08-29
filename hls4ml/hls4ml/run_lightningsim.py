@@ -181,6 +181,7 @@ def main():
         args.env,
         "lightningsim",
         "--skip-wait-for-synthesis",
+        "--gui",
         str(solution),
     ]
 
