@@ -190,9 +190,59 @@ def main():
     print(" ".join(cmd))
     print()
 
-    subprocess.run(cmd, check=True)
+    # ------------------------------------------------------------
+    # CHANGED PORTION
+    # ------------------------------------------------------------
 
-    print("\n✓ LightningSim completed successfully.")
+    process = subprocess.Popen(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        bufsize=1,
+    )
+
+    simulation_finished = False
+
+    while True:
+
+        line = process.stdout.readline()
+
+        if line:
+            print(line, end="")
+
+            if "Simulation finished." in line:
+                simulation_finished = True
+                break
+
+        elif process.poll() is not None:
+            break
+
+    if not simulation_finished:
+
+        return_code = process.poll()
+
+        if return_code != 0:
+            raise subprocess.CalledProcessError(
+                return_code,
+                cmd,
+            )
+
+        raise RuntimeError(
+            "LightningSim exited before simulation finished."
+        )
+
+    print(
+        "\n✓ LightningSim simulation completed successfully."
+    )
+
+    print(
+        "✓ LightningSim GUI is still running."
+    )
+
+    # Return the process so the caller can terminate it
+    # after reading the latency from the GUI.
+    return process
 
 
 if __name__ == "__main__":

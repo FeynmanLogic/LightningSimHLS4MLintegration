@@ -1,0 +1,1012 @@
+---
+MainSourceFile:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/tools/software/amd/xilinx/2025.2.1/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1026193
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/tools/software/amd/xilinx/2025.2.1/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1026668
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/tools/software/amd/xilinx/2025.2.1/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1027144
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/tools/software/amd/xilinx/2025.2.1/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1367443
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2113861
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2114110
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2114605
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_265_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      265
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2447978
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_265_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_275_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2448365
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_275_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_286_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      286
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2448700
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_286_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_293_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      293
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2448923
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_293_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_295_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      295
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2449018
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_295_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_307_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2449382
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_307_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_309_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      309
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2449464
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_309_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_324_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      324
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2449807
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_324_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_344_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      344
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2450260
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_344_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_345_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      345
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2450305
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_345_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_360_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      360
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2450714
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_360_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_367_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      367
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2450927
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_367_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_136_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      136
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460687
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_136_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_137_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      137
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460771
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_137_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      158
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2461324
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_159_4:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      159
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2461408
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_159_4: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_31_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      31
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2465635
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_31_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2465891
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_57_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      57
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2466255
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_57_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_84_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      84
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467071
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_84_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_114_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      114
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467735
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_114_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      151
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2468880
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_167_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      167
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2469344
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_167_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_200_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      200
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2470282
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_200_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_213_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      213
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2470824
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_213_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2471697
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_255_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2471977
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_255_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472547
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_275_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472791
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_275_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_288_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      288
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2473151
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_288_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2474111
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2474231
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_331_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      331
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2474288
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_331_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_348_4:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2474888
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_348_4: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2475396
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_369_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      369
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2475547
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_369_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_405_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      405
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2476755
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_405_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_407_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      407
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2476831
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_407_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_409_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      409
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2476911
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_409_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_414_4:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2477182
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_414_4: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_427_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      427
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2477511
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_427_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_457_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      457
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478151
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_457_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_484_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      484
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478990
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_484_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_498_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      498
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479342
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_498_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_514_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      514
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479803
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_514_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_532_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      532
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2480276
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_532_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_549_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      549
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2480682
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_549_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_566_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      566
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481077
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_566_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_596_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      596
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481746
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_596_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_615_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      615
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482320
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_615_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_645_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      645
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482989
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_645_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_664_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      664
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483543
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_664_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_694_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      694
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2484195
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_694_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_721_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      721
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485033
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_721_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_749_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      749
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485720
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_749_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_779_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      779
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486408
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_779_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_808_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      808
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487251
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_808_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_828_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      828
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487673
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_828_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_229_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      229
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493835
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_229_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_236_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      236
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493986
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_236_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_245_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      245
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494266
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_245_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_4:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494471
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_4: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_258_5:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      258
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494579
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_258_5: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_269_6:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      269
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494924
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_269_6: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_273_7:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      273
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2495045
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_273_7: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496033
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496130
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496828
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_211_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2503267
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_211_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_220_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      220
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2503563
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_220_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506857
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507006
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_338_3:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      338
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507221
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_338_3: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      33
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      189
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2534569
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_1:  '
+      FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2536486
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_1: '
+    Level:           Remark
+    BuildDirectory:  '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/my-hls-test'
+...

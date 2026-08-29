@@ -1,0 +1,6 @@
+   Build using "/tools/software/amd/xilinx/2025.2.1/Vitis/lnx64/tools/clang-16/bin/clang++"
+   Compiling apatb_myproject.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_myproject_ir.ll
+   Generating cosim.tv.exe

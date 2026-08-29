@@ -1,0 +1,11 @@
+{
+    "benchmark": {
+        "num_models": 3,
+        "models": [
+            "KERAS_1layer.json",
+            "KERAS_3layer.json",
+            "KERAS_3layer_batch_norm.json"
+        ]
+    },
+    "results": []
+}

@@ -1,0 +1,3 @@
+  CREATE_STREAM @0 {NAME:myproject_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.myproject_virtual_sqr STREAM:1041}
+  CREATE_STREAM @113000 {NAME:myproject_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_layer5_out.s_agt.sqr STREAM:1116}
+  CREATE_STREAM @128000 {NAME:myproject_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_input_1.m_agt.sqr STREAM:1124}
