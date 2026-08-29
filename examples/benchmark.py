@@ -22,7 +22,7 @@ import re
 import time
 from pathlib import Path
 
-import hls4ml
+import hls4ml as hls4ml
 
 
 # ============================================================
@@ -266,7 +266,7 @@ def benchmark_model(model_name):
 
     lightning_start = time.perf_counter()
 
-    hls_model.run_lightningsim()
+    hls4ml.run_lightningsim()
 
     lightning_time = (
         time.perf_counter() - lightning_start
@@ -302,64 +302,64 @@ def benchmark_model(model_name):
 
     # --------------------------------------------------------
     # 7. FIFOAdvisor
-    # --------------------------------------------------------
+    # # --------------------------------------------------------
 
-    print("\n[5] Running FIFOAdvisor...")
+    # print("\n[5] Running FIFOAdvisor...")
 
-    # Remove stale results from the previous model.
+    # # Remove stale results from the previous model.
 
-    fifo_result_file = Path(
-        "fifo_advisor_results.json"
-    )
+    # fifo_result_file = Path(
+    #     "fifo_advisor_results.json"
+    # )
 
-    if fifo_result_file.exists():
-        fifo_result_file.unlink()
+    # if fifo_result_file.exists():
+    #     fifo_result_file.unlink()
 
-    fifo_start = time.perf_counter()
+    # fifo_start = time.perf_counter()
 
-    hls_model.run_fifoadvisor(
-        solver="random",
-        seed=7,
-        n_samples=FIFOADVISOR_SAMPLES,
-    )
+    # hls_model.run_fifoadvisor(
+    #     solver="random",
+    #     seed=7,
+    #     n_samples=FIFOADVISOR_SAMPLES,
+    # )
 
-    fifo_time = (
-        time.perf_counter() - fifo_start
-    )
+    # fifo_time = (
+    #     time.perf_counter() - fifo_start
+    # )
 
-    result["fifoadvisor"][
-        "wall_time_seconds"
-    ] = fifo_time
+    # result["fifoadvisor"][
+    #     "wall_time_seconds"
+    # ] = fifo_time
 
-    print(
-        f"FIFOAdvisor time: "
-        f"{fifo_time:.3f} seconds"
-    )
+    # print(
+    #     f"FIFOAdvisor time: "
+    #     f"{fifo_time:.3f} seconds"
+    # )
 
-    # --------------------------------------------------------
-    # 8. Read FIFOAdvisor output
-    # --------------------------------------------------------
+    # # --------------------------------------------------------
+    # # 8. Read FIFOAdvisor output
+    # # --------------------------------------------------------
 
-    fifo_results = load_fifo_results()
+    # fifo_results = load_fifo_results()
 
-    if fifo_results is not None:
+    # if fifo_results is not None:
 
-        result["fifoadvisor"][
-            "results"
-        ] = fifo_results
+    #     result["fifoadvisor"][
+    #         "results"
+    #     ] = fifo_results
 
-        print(
-            "FIFOAdvisor results collected."
-        )
+    #     print(
+    #         "FIFOAdvisor results collected."
+    #     )
 
-    else:
+    # else:
 
-        print(
-            "WARNING: FIFOAdvisor results "
-            "were not found."
-        )
+    #     print(
+    #         "WARNING: FIFOAdvisor results "
+    #         "were not found."
+    #     )
 
-    return result
+    # return result
 
 
 # ============================================================
