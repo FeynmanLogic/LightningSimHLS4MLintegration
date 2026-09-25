@@ -1,0 +1,78 @@
+Backend: Vitis
+ClockPeriod: 5
+ClockUncertainty: 27%
+HLSConfig:
+  LayerName:
+    fc1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    fc1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    fc2:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    fc2_relu:
+      Precision:
+        result: auto
+      Trace: false
+    fc3:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    fc3_relu:
+      Precision:
+        result: auto
+      Trace: false
+    model_input:
+      Precision:
+        result: auto
+      Trace: false
+    output:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    output_softmax:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  model_input:
+  - 16
+KerasModel: !keras_model '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/keras_model.keras'
+OutputDir: /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default
+OutputPredictions: null
+OutputShapes:
+  layer9_out:
+  - 5
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 7c220d5c
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

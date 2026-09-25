@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s'
+================================================================
+* Date:           Mon Sep 21 18:27:43 2026
+
+* Version:        2025.2.1 (Build 6397637 on Mar 18 2026)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.491 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        9|        9|  45.000 ns|  45.000 ns|    9|    9|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 11 [1/1] ( I:1.82ns O:1.82ns )   --->   "%layer7_out_read = read i512 @_ssdm_op_Read.ap_fifo.volatile.i512P0A, i512 %layer7_out" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 11 'read' 'layer7_out_read' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%data = trunc i512 %layer7_out_read" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 12 'trunc' 'data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_93 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 16, i32 31" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 13 'partselect' 'data_93' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%data_63 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 32, i32 47" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 14 'partselect' 'data_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%data_64 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 48, i32 63" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 15 'partselect' 'data_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%data_65 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 64, i32 79" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 16 'partselect' 'data_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%data_66 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 80, i32 95" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 17 'partselect' 'data_66' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%data_67 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 96, i32 111" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 18 'partselect' 'data_67' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%data_68 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 112, i32 127" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 19 'partselect' 'data_68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%data_69 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 128, i32 143" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 20 'partselect' 'data_69' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%data_70 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 144, i32 159" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 21 'partselect' 'data_70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%data_71 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 160, i32 175" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 22 'partselect' 'data_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%data_72 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 176, i32 191" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 23 'partselect' 'data_72' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%data_73 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 192, i32 207" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 24 'partselect' 'data_73' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%data_74 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 208, i32 223" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 25 'partselect' 'data_74' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%data_75 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 224, i32 239" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 26 'partselect' 'data_75' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%data_76 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 240, i32 255" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 27 'partselect' 'data_76' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%data_77 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 256, i32 271" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 28 'partselect' 'data_77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%data_78 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 272, i32 287" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 29 'partselect' 'data_78' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%data_79 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 288, i32 303" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 30 'partselect' 'data_79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%data_80 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 304, i32 319" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 31 'partselect' 'data_80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%data_81 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 320, i32 335" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 32 'partselect' 'data_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%data_82 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 336, i32 351" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 33 'partselect' 'data_82' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%data_83 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 352, i32 367" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 34 'partselect' 'data_83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%data_84 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 368, i32 383" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 35 'partselect' 'data_84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%data_85 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 384, i32 399" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 36 'partselect' 'data_85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%data_86 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 400, i32 415" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 37 'partselect' 'data_86' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%data_87 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 416, i32 431" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 38 'partselect' 'data_87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%data_88 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 432, i32 447" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 39 'partselect' 'data_88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%data_89 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 448, i32 463" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 40 'partselect' 'data_89' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%data_90 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 464, i32 479" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 41 'partselect' 'data_90' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%data_91 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 480, i32 495" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 42 'partselect' 'data_91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%data_92 = partselect i16 @_ssdm_op_PartSelect.i16.i512.i32.i32, i512 %layer7_out_read, i32 496, i32 511" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 43 'partselect' 'data_92' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.34>
+ST_2 : Operation 44 [8/8] (3.34ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 44 'call' 'call_ret' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.49>
+ST_3 : Operation 45 [7/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 45 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 3.49>
+ST_4 : Operation 46 [6/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 46 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.49>
+ST_5 : Operation 47 [5/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 47 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 3.49>
+ST_6 : Operation 48 [4/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 48 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 3.49>
+ST_7 : Operation 49 [3/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 49 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 3.49>
+ST_8 : Operation 50 [2/8] (3.49ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 50 'call' 'call_ret' <Predicate = true> <Delay = 3.49> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 2.07>
+ST_9 : Operation 51 [1/8] (2.07ns)   --->   "%call_ret = call i190 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>, i16 %data, i16 %data_93, i16 %data_63, i16 %data_64, i16 %data_65, i16 %data_66, i16 %data_67, i16 %data_68, i16 %data_69, i16 %data_70, i16 %data_71, i16 %data_72, i16 %data_73, i16 %data_74, i16 %data_75, i16 %data_76, i16 %data_77, i16 %data_78, i16 %data_79, i16 %data_80, i16 %data_81, i16 %data_82, i16 %data_83, i16 %data_84, i16 %data_85, i16 %data_86, i16 %data_87, i16 %data_88, i16 %data_89, i16 %data_90, i16 %data_91, i16 %data_92" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 51 'call' 'call_ret' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 52 [1/1] (0.00ns)   --->   "%res = extractvalue i190 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 52 'extractvalue' 'res' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 53 [1/1] (0.00ns)   --->   "%res_1 = extractvalue i190 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 53 'extractvalue' 'res_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 54 [1/1] (0.00ns)   --->   "%res_2 = extractvalue i190 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 54 'extractvalue' 'res_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 55 [1/1] (0.00ns)   --->   "%res_3 = extractvalue i190 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 55 'extractvalue' 'res_3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 56 [1/1] (0.00ns)   --->   "%res_4 = extractvalue i190 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 56 'extractvalue' 'res_4' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 1.82>
+ST_10 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i190 %layer8_out, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer7_out, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 59 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i190 @_ssdm_op_BitConcatenate.i190.i38.i38.i38.i38.i38, i38 %res_4, i38 %res_3, i38 %res_2, i38 %res_1, i38 %res" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 59 'bitconcatenate' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 60 [1/1] ( I:1.82ns O:1.82ns )   --->   "%write_ln77 = write void @_ssdm_op_Write.ap_fifo.volatile.i190P0A, i190 %layer8_out, i190 %p_s" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 60 'write' 'write_ln77' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 190> <Depth = 1> <FIFO>
+ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln101 = ret" [firmware/nnet_utils/nnet_dense_stream.h:101]   --->   Operation 61 'ret' 'ret_ln101' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 1.825ns
+The critical path consists of the following:
+	fifo read operation ('layer7_out_read', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) on port 'layer7_out' (firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [5]  (1.825 ns)
+
+ <State 2>: 3.349ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.349 ns)
+
+ <State 3>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 4>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 5>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 6>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 7>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 8>: 3.491ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (3.491 ns)
+
+ <State 9>: 2.077ns
+The critical path consists of the following:
+	'call' operation 190 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<38, 18, 5, 3, 0>, config8>' [38]  (2.077 ns)
+
+ <State 10>: 1.825ns
+The critical path consists of the following:
+	fifo write operation ('write_ln77', firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) on port 'layer8_out' (firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) [45]  (1.825 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

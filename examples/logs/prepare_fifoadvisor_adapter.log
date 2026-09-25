@@ -1,0 +1,20 @@
+2026-09-22 08:25:47.114841: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-22 08:25:50.906419: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Generating fresh hls4ml io_stream project...
+Downloading example model files ...
+
+Adapter project prepared:
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifoadvisor_adapter_models/keras_3layer
+
+Top function:
+myproject_array_wrapper
+
+Internal FIFO pragmas:
+#pragma HLS STREAM variable=layer2_out depth=1
+#pragma HLS STREAM variable=layer3_out depth=1
+#pragma HLS STREAM variable=layer4_out depth=1
+#pragma HLS STREAM variable=layer5_out depth=1
+#pragma HLS STREAM variable=layer6_out depth=1
+#pragma HLS STREAM variable=layer7_out depth=1
+#pragma HLS STREAM variable=layer8_out depth=1

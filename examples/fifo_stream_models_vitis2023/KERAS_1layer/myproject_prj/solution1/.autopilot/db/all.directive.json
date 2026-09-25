@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]

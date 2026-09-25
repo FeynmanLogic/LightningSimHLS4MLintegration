@@ -1,0 +1,123 @@
+{
+  "fifo_id_to_name_map": {
+    "0": "adapter_input_fifo",
+    "1": "adapter_output_fifo",
+    "2": "layer2_out",
+    "3": "layer4_out",
+    "4": "layer5_out",
+    "5": "layer6_out",
+    "6": "layer8_out",
+    "7": "layer9_out",
+    "8": "layer10_out",
+    "9": "layer12_out",
+    "10": "layer13_out",
+    "11": "layer14_out",
+    "12": "layer16_out"
+  },
+  "evaluations": [
+    {
+      "fifo_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "fifo_config_inline_pragmas": {
+        "adapter_input_fifo": "#pragma HLS STREAM variable=adapter_input_fifo depth=2",
+        "adapter_output_fifo": "#pragma HLS STREAM variable=adapter_output_fifo depth=2",
+        "layer2_out": "#pragma HLS STREAM variable=layer2_out depth=1",
+        "layer4_out": "#pragma HLS STREAM variable=layer4_out depth=1",
+        "layer5_out": "#pragma HLS STREAM variable=layer5_out depth=1",
+        "layer6_out": "#pragma HLS STREAM variable=layer6_out depth=1",
+        "layer8_out": "#pragma HLS STREAM variable=layer8_out depth=1",
+        "layer9_out": "#pragma HLS STREAM variable=layer9_out depth=1",
+        "layer10_out": "#pragma HLS STREAM variable=layer10_out depth=1",
+        "layer12_out": "#pragma HLS STREAM variable=layer12_out depth=1",
+        "layer13_out": "#pragma HLS STREAM variable=layer13_out depth=1",
+        "layer14_out": "#pragma HLS STREAM variable=layer14_out depth=1",
+        "layer16_out": "#pragma HLS STREAM variable=layer16_out depth=1"
+      },
+      "fifo_config_tcl_commands": {
+        "adapter_input_fifo": "set_directive_stream -depth 2 -type fifo {{location}} adapter_input_fifo",
+        "adapter_output_fifo": "set_directive_stream -depth 2 -type fifo {{location}} adapter_output_fifo",
+        "layer2_out": "set_directive_stream -depth 1 -type fifo {{location}} layer2_out",
+        "layer4_out": "set_directive_stream -depth 1 -type fifo {{location}} layer4_out",
+        "layer5_out": "set_directive_stream -depth 1 -type fifo {{location}} layer5_out",
+        "layer6_out": "set_directive_stream -depth 1 -type fifo {{location}} layer6_out",
+        "layer8_out": "set_directive_stream -depth 1 -type fifo {{location}} layer8_out",
+        "layer9_out": "set_directive_stream -depth 1 -type fifo {{location}} layer9_out",
+        "layer10_out": "set_directive_stream -depth 1 -type fifo {{location}} layer10_out",
+        "layer12_out": "set_directive_stream -depth 1 -type fifo {{location}} layer12_out",
+        "layer13_out": "set_directive_stream -depth 1 -type fifo {{location}} layer13_out",
+        "layer14_out": "set_directive_stream -depth 1 -type fifo {{location}} layer14_out",
+        "layer16_out": "set_directive_stream -depth 1 -type fifo {{location}} layer16_out"
+      },
+      "deadlock": false,
+      "latency": 85,
+      "bram_usage_total": 0,
+      "timestamp": 3110759.662711621,
+      "is_pareto_optimal": true
+    },
+    {
+      "fifo_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "9": 2,
+        "10": 2,
+        "11": 2,
+        "12": 2
+      },
+      "fifo_config_inline_pragmas": {
+        "adapter_input_fifo": "#pragma HLS STREAM variable=adapter_input_fifo depth=2",
+        "adapter_output_fifo": "#pragma HLS STREAM variable=adapter_output_fifo depth=2",
+        "layer2_out": "#pragma HLS STREAM variable=layer2_out depth=2",
+        "layer4_out": "#pragma HLS STREAM variable=layer4_out depth=2",
+        "layer5_out": "#pragma HLS STREAM variable=layer5_out depth=2",
+        "layer6_out": "#pragma HLS STREAM variable=layer6_out depth=2",
+        "layer8_out": "#pragma HLS STREAM variable=layer8_out depth=2",
+        "layer9_out": "#pragma HLS STREAM variable=layer9_out depth=2",
+        "layer10_out": "#pragma HLS STREAM variable=layer10_out depth=2",
+        "layer12_out": "#pragma HLS STREAM variable=layer12_out depth=2",
+        "layer13_out": "#pragma HLS STREAM variable=layer13_out depth=2",
+        "layer14_out": "#pragma HLS STREAM variable=layer14_out depth=2",
+        "layer16_out": "#pragma HLS STREAM variable=layer16_out depth=2"
+      },
+      "fifo_config_tcl_commands": {
+        "adapter_input_fifo": "set_directive_stream -depth 2 -type fifo {{location}} adapter_input_fifo",
+        "adapter_output_fifo": "set_directive_stream -depth 2 -type fifo {{location}} adapter_output_fifo",
+        "layer2_out": "set_directive_stream -depth 2 -type fifo {{location}} layer2_out",
+        "layer4_out": "set_directive_stream -depth 2 -type fifo {{location}} layer4_out",
+        "layer5_out": "set_directive_stream -depth 2 -type fifo {{location}} layer5_out",
+        "layer6_out": "set_directive_stream -depth 2 -type fifo {{location}} layer6_out",
+        "layer8_out": "set_directive_stream -depth 2 -type fifo {{location}} layer8_out",
+        "layer9_out": "set_directive_stream -depth 2 -type fifo {{location}} layer9_out",
+        "layer10_out": "set_directive_stream -depth 2 -type fifo {{location}} layer10_out",
+        "layer12_out": "set_directive_stream -depth 2 -type fifo {{location}} layer12_out",
+        "layer13_out": "set_directive_stream -depth 2 -type fifo {{location}} layer13_out",
+        "layer14_out": "set_directive_stream -depth 2 -type fifo {{location}} layer14_out",
+        "layer16_out": "set_directive_stream -depth 2 -type fifo {{location}} layer16_out"
+      },
+      "deadlock": false,
+      "latency": 85,
+      "bram_usage_total": 0,
+      "timestamp": 3110759.662742455,
+      "is_pareto_optimal": false
+    }
+  ]
+}

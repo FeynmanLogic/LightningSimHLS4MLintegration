@@ -1,0 +1,193 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s'" level="0">
+<item name = "Date">Mon Sep 21 18:29:29 2026
+</item>
+<item name = "Version">2025.2.1 (Build 6397637 on Mar 18 2026)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.853 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1104, 1104, 5.520 us, 5.520 us, 1104, 1104, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s_fu_285">init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s, 1084, 1084, 5.420 us, 5.420 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 653, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 12, 6061, 5068, -</column>
+<column name="Memory">2, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 192, -</column>
+<column name="Register">-, -, 836, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 5, 6, 11, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s_fu_285">init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s, 0, 7, 5686, 5058, 0</column>
+<column name="mul_18s_16s_26_2_1_U3350">mul_18s_16s_26_2_1, 0, 1, 75, 2, 0</column>
+<column name="mul_18s_16s_26_2_1_U3351">mul_18s_16s_26_2_1, 0, 1, 75, 2, 0</column>
+<column name="mul_18s_16s_26_2_1_U3352">mul_18s_16s_26_2_1, 0, 1, 75, 2, 0</column>
+<column name="mul_18s_16s_26_2_1_U3353">mul_18s_16s_26_2_1, 0, 1, 75, 2, 0</column>
+<column name="mul_18s_16s_26_2_1_U3354">mul_18s_16s_26_2_1, 0, 1, 75, 2, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="exp_table_U">softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_exp_tablecud, 1, 0, 0, 0, 1024, 16, 1, 16384</column>
+<column name="invert_table_U">softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_invert_tabkb, 1, 0, 0, 0, 1024, 18, 1, 18432</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln51_1_fu_533_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln51_2_fu_541_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln51_3_fu_545_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln51_fu_537_p2">+, 0, 0, 23, 16, 16</column>
+<column name="x_1_fu_447_p2">-, 0, 0, 44, 37, 37</column>
+<column name="x_2_fu_451_p2">-, 0, 0, 44, 37, 37</column>
+<column name="x_3_fu_455_p2">-, 0, 0, 44, 37, 37</column>
+<column name="x_4_fu_459_p2">-, 0, 0, 44, 37, 37</column>
+<column name="x_fu_443_p2">-, 0, 0, 44, 37, 37</column>
+<column name="icmp_ln66_1_fu_383_p2">icmp, 0, 0, 45, 38, 38</column>
+<column name="icmp_ln66_2_fu_409_p2">icmp, 0, 0, 45, 38, 38</column>
+<column name="icmp_ln66_3_fu_424_p2">icmp, 0, 0, 45, 38, 38</column>
+<column name="icmp_ln66_fu_379_p2">icmp, 0, 0, 45, 38, 38</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln66_1_fu_403_p3">select, 0, 0, 38, 1, 38</column>
+<column name="select_ln66_2_fu_418_p3">select, 0, 0, 38, 1, 38</column>
+<column name="select_ln66_3_fu_436_p3">select, 0, 0, 37, 1, 37</column>
+<column name="select_ln66_fu_392_p3">select, 0, 0, 38, 1, 38</column>
+<column name="xor_ln66_1_fu_398_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln66_2_fu_413_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln66_3_fu_428_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln66_fu_387_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">113, 22, 1, 22</column>
+<column name="exp_table_address0">9, 2, 10, 20</column>
+<column name="exp_table_address0_local">20, 4, 10, 40</column>
+<column name="exp_table_address1_local">14, 3, 10, 30</column>
+<column name="exp_table_ce0">9, 2, 1, 2</column>
+<column name="exp_table_we0">9, 2, 1, 2</column>
+<column name="layer8_out_blk_n">9, 2, 1, 2</column>
+<column name="layer9_out_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_1_reg_809">16, 0, 16, 0</column>
+<column name="a_reg_787">16, 0, 16, 0</column>
+<column name="add_ln51_1_reg_837">16, 0, 16, 0</column>
+<column name="add_ln51_2_reg_847">16, 0, 16, 0</column>
+<column name="add_ln51_reg_842">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">21, 0, 21, 0</column>
+<column name="b_1_reg_825">16, 0, 16, 0</column>
+<column name="b_2_reg_831">16, 0, 16, 0</column>
+<column name="b_reg_803">16, 0, 16, 0</column>
+<column name="grp_init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s_fu_285_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln66_1_reg_715">1, 0, 1, 0</column>
+<column name="icmp_ln66_2_reg_732">1, 0, 1, 0</column>
+<column name="icmp_ln66_3_reg_743">1, 0, 1, 0</column>
+<column name="icmp_ln66_reg_710">1, 0, 1, 0</column>
+<column name="inv_exp_sum_reg_862">18, 0, 18, 0</column>
+<column name="select_ln66_1_reg_726">38, 0, 38, 0</column>
+<column name="select_ln66_2_reg_737">38, 0, 38, 0</column>
+<column name="select_ln66_3_reg_748">37, 0, 37, 0</column>
+<column name="select_ln66_reg_720">38, 0, 38, 0</column>
+<column name="tmp_1_reg_852">8, 0, 8, 0</column>
+<column name="tmp_4_reg_777">10, 0, 10, 0</column>
+<column name="tmp_5_reg_757">10, 0, 10, 0</column>
+<column name="tmp_7_reg_762">10, 0, 10, 0</column>
+<column name="tmp_9_reg_767">10, 0, 10, 0</column>
+<column name="tmp_reg_684">37, 0, 37, 0</column>
+<column name="tmp_s_reg_772">10, 0, 10, 0</column>
+<column name="trunc_ln198_1_reg_661">38, 0, 38, 0</column>
+<column name="trunc_ln198_2_reg_667">38, 0, 38, 0</column>
+<column name="trunc_ln198_3_reg_673">38, 0, 38, 0</column>
+<column name="trunc_ln198_4_reg_679">38, 0, 38, 0</column>
+<column name="trunc_ln198_reg_655">38, 0, 38, 0</column>
+<column name="trunc_ln213_2_reg_695">37, 0, 37, 0</column>
+<column name="trunc_ln213_3_reg_700">37, 0, 37, 0</column>
+<column name="trunc_ln213_4_reg_705">37, 0, 37, 0</column>
+<column name="trunc_ln213_reg_690">37, 0, 37, 0</column>
+<column name="trunc_ln241_1_reg_906">16, 0, 16, 0</column>
+<column name="trunc_ln241_2_reg_911">16, 0, 16, 0</column>
+<column name="trunc_ln241_3_reg_916">16, 0, 16, 0</column>
+<column name="trunc_ln241_4_reg_921">16, 0, 16, 0</column>
+<column name="trunc_ln3_reg_901">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config9&gt;, return value</column>
+<column name="layer8_out_dout">in, 190, ap_fifo, layer8_out, pointer</column>
+<column name="layer8_out_empty_n">in, 1, ap_fifo, layer8_out, pointer</column>
+<column name="layer8_out_read">out, 1, ap_fifo, layer8_out, pointer</column>
+<column name="layer8_out_num_data_valid">in, 2, ap_fifo, layer8_out, pointer</column>
+<column name="layer8_out_fifo_cap">in, 2, ap_fifo, layer8_out, pointer</column>
+<column name="layer9_out_TDATA">out, 80, axis, layer9_out, pointer</column>
+<column name="layer9_out_TVALID">out, 1, axis, layer9_out, pointer</column>
+<column name="layer9_out_TREADY">in, 1, axis, layer9_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

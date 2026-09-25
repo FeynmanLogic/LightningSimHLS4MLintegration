@@ -1,0 +1,458 @@
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/software/amd/xilinx/2025.2.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./myproject_subsystem -s myproject -debug all 
+Multi-threading is on. Using 127 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_shl_18ns_11ns_18_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_shl_18ns_11ns_18_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_37_17_5_3_0_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_37_17_5_3_0_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_8s_24_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_8s_24_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_7s_23_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_7s_23_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_8ns_24_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_8ns_24_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_9s_25_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_9s_25_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_9ns_25_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_9ns_25_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_10ns_26_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_10ns_26_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_7ns_23_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_7ns_23_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_10s_26_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_10s_26_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_6ns_22_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_6ns_22_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_6s_22_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_6s_22_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_5s_21_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_5s_21_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_16s_5ns_21_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_16s_5ns_21_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fpext_32ns_64_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fpext_32ns_64_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fexp_32ns_32ns_32_31_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fexp_32ns_32ns_32_31_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_ctlz_37_37_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_ctlz_37_37_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_bitselect_1ns_37ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_bitselect_1ns_37ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_lshr_37ns_32ns_37_7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_lshr_37ns_32ns_37_7_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_shl_37ns_32ns_37_7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_shl_37ns_32ns_37_7_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_bitselect_1ns_54ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_ashr_54ns_11ns_54_7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_ashr_54ns_11ns_54_7_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_lshr_54ns_6ns_54_7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_lshr_54ns_6ns_54_7_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_sparsemux_7_2_18_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_sparsemux_7_2_18_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_sparsemux_7_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_sparsemux_7_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_sparsemux_7_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_mul_18s_16s_26_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_18s_16s_26_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_invert_tabkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_invert_tabkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_exp_tablecud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s_exp_tablecud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w2368_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w2368_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w2368_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w1024_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1024_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1024_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w1248_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1248_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1248_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w512_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w512_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w512_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w1216_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1216_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w1216_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_fifo_w190_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w190_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_fifo_w190_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_U0
+INFO: [VRFC 10-311] analyzing module myproject_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/svr/svr_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/svr/svr_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/myproject_subsystem/myproject_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/ip/xil_defaultlib/myproject_fpext_32ns_64_4_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myproject_fpext_32ns_64_4_no_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/sim/verilog/ip/xil_defaultlib/myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_viv_comp
+Compiling package xbip_utils_v3_0_15.xbip_utils_v3_0_15_pkg
+Compiling package axi_utils_v2_0_11.axi_utils_v2_0_11_pkg
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_exp_table...
+Compiling package mult_gen_v12_0_24.mult_gen_v12_0_24_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_pkg
+Compiling package floating_point_v7_1_21.flt_utils
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv_comp
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.svr_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.myproject_subsystem_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.myproject_mul_16s_8s_24_2_1(NUM_...
+Compiling module xil_defaultlib.myproject_mul_16s_7s_23_2_1(NUM_...
+Compiling module xil_defaultlib.myproject_mul_16s_8ns_24_2_1(NUM...
+Compiling module xil_defaultlib.myproject_mul_16s_9s_25_2_1(NUM_...
+Compiling module xil_defaultlib.myproject_mul_16s_9ns_25_2_1(NUM...
+Compiling module xil_defaultlib.myproject_mul_16s_10ns_26_2_1(NU...
+Compiling module xil_defaultlib.myproject_mul_16s_7ns_23_2_1(NUM...
+Compiling module xil_defaultlib.myproject_mul_16s_10s_26_2_1(NUM...
+Compiling module xil_defaultlib.myproject_mul_16s_6ns_22_2_1(NUM...
+Compiling module xil_defaultlib.myproject_mul_16s_6s_22_2_1(NUM_...
+Compiling module xil_defaultlib.myproject_mul_16s_5s_21_2_1(NUM_...
+Compiling module xil_defaultlib.myproject_mul_16s_5ns_21_2_1(NUM...
+Compiling module xil_defaultlib.myproject_dense_latency_ap_fixed...
+Compiling module xil_defaultlib.myproject_regslice_both(DataWidt...
+Compiling module xil_defaultlib.myproject_dense_array_ap_fixed_1...
+Compiling module xil_defaultlib.myproject_relu_array_ap_fixed_64...
+Compiling module xil_defaultlib.myproject_dense_latency_ap_fixed...
+Compiling module xil_defaultlib.myproject_dense_array_ap_fixed_6...
+Compiling module xil_defaultlib.myproject_relu_array_ap_fixed_32...
+Compiling module xil_defaultlib.myproject_dense_latency_ap_fixed...
+Compiling module xil_defaultlib.myproject_dense_array_ap_fixed_3...
+Compiling module xil_defaultlib.myproject_relu_array_ap_fixed_32...
+Compiling module xil_defaultlib.myproject_dense_latency_ap_fixed...
+Compiling module xil_defaultlib.myproject_dense_array_ap_fixed_3...
+Compiling module xil_defaultlib.myproject_softmax_stable_array_a...
+Compiling module xil_defaultlib.myproject_softmax_stable_array_a...
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=23)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.special_detect [\special_detect(a_fw=24)(1,7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21_viv [\floating_point_v7_1_21_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21 [\floating_point_v7_1_21(c_xdevic...]
+Compiling architecture myproject_fpext_32ns_64_4_no_dsp_1_ip_arch of entity xil_defaultlib.myproject_fpext_32ns_64_4_no_dsp_1_ip [myproject_fpext_32ns_64_4_no_dsp...]
+Compiling module xil_defaultlib.myproject_fpext_32ns_64_4_no_dsp...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=2...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=43,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_21.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=27)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=27,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=28)\]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_exp_specialcase [\flt_exp_specialcase(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=10)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay_s [\delay_s(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=9)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay_s [\delay_s(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=16)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=2)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=6,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_21.zero_det_sel [\zero_det_sel(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=34)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.shift_msb_first [\shift_msb_first(a_width=24,resu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=34,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=3)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=35,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=36)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_to_fix_conv [\flt_to_fix_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=5,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=18,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=5,length=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_exp_ccm [\flt_exp_ccm(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=5)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xc7z020...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,length=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_exp_ccm [\flt_exp_ccm(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=33,length=10)\]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_exp_e2A [\flt_exp_e2A(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=6)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_exp_e2zmzm1 [\flt_exp_e2zmzm1(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=16,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8,length=16)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8,length=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=14)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=14,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_21.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110000111100")(0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=9,fast_input=true)\]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=32)\]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_exp_recomb [\flt_exp_recomb(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_exp [\flt_exp(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21_viv [\floating_point_v7_1_21_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21 [\floating_point_v7_1_21(c_xdevic...]
+Compiling architecture myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip_arch of entity xil_defaultlib.myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip [myproject_fexp_32ns_32ns_32_31_f...]
+Compiling module xil_defaultlib.myproject_fexp_32ns_32ns_32_31_f...
+Compiling module xil_defaultlib.myproject_ctlz_37_37_1_1(din_WID...
+Compiling module xil_defaultlib.myproject_bitselect_1ns_37ns_6ns...
+Compiling module xil_defaultlib.myproject_lshr_37ns_32ns_37_7_1(...
+Compiling module xil_defaultlib.myproject_shl_37ns_32ns_37_7_1(N...
+Compiling module xil_defaultlib.myproject_bitselect_1ns_54ns_6ns...
+Compiling module xil_defaultlib.myproject_ashr_54ns_11ns_54_7_1(...
+Compiling module xil_defaultlib.myproject_lshr_54ns_6ns_54_7_1(N...
+Compiling module xil_defaultlib.myproject_shl_18ns_11ns_18_2_1(N...
+Compiling module xil_defaultlib.myproject_sparsemux_7_2_18_1_1(d...
+Compiling module xil_defaultlib.myproject_sparsemux_7_2_1_1_1(se...
+Compiling module xil_defaultlib.myproject_sparsemux_7_2_16_1_1(d...
+Compiling module xil_defaultlib.myproject_flow_control_loop_pipe...
+Compiling module xil_defaultlib.myproject_init_exp_table_ap_ufix...
+Compiling module xil_defaultlib.myproject_mul_18s_16s_26_2_1(NUM...
+Compiling module xil_defaultlib.myproject_softmax_stable_array_a...
+Compiling module xil_defaultlib.myproject_regslice_both(DataWidt...
+Compiling module xil_defaultlib.myproject_softmax_array_array_ap...
+Compiling module xil_defaultlib.myproject_fifo_w2368_d1_S_ShiftR...
+Compiling module xil_defaultlib.myproject_fifo_w2368_d1_S_defaul...
+Compiling module xil_defaultlib.myproject_fifo_w1024_d1_S_ShiftR...
+Compiling module xil_defaultlib.myproject_fifo_w1024_d1_S_defaul...
+Compiling module xil_defaultlib.myproject_fifo_w1248_d1_S_ShiftR...
+Compiling module xil_defaultlib.myproject_fifo_w1248_d1_S_defaul...
+Compiling module xil_defaultlib.myproject_fifo_w512_d1_S_ShiftRe...
+Compiling module xil_defaultlib.myproject_fifo_w512_d1_S_default
+Compiling module xil_defaultlib.myproject_fifo_w1216_d1_S_ShiftR...
+Compiling module xil_defaultlib.myproject_fifo_w1216_d1_S_defaul...
+Compiling module xil_defaultlib.myproject_fifo_w190_d1_S_ShiftRe...
+Compiling module xil_defaultlib.myproject_fifo_w190_d1_S_default
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_relu_array_a...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_dense_array_...
+Compiling module xil_defaultlib.myproject_start_for_softmax_arra...
+Compiling module xil_defaultlib.myproject_start_for_softmax_arra...
+Compiling module xil_defaultlib.myproject
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=256)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=80)
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_myproject_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot myproject

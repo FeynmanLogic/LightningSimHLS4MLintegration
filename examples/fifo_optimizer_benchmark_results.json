@@ -1,0 +1,38 @@
+{
+  "configuration": {
+    "models": [
+      "dense_stream"
+    ],
+    "part": "xc7z020clg400-1",
+    "fifoadvisor_environment": "fifo-advisor",
+    "fifoadvisor_solver": "heuristic",
+    "seed": 7,
+    "n_samples": 1000,
+    "maxfun": 100
+  },
+  "results": [
+    {
+      "model": "dense_stream",
+      "status": "FAILED",
+      "default_hls4ml": {
+        "status": "PASSED",
+        "runtime_seconds": 1140.0291848471388,
+        "solution": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1",
+        "stream_evidence_count": 672,
+        "stream_evidence_preview": [
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_test.cpp: hls::stream<input_t> model_input(\"model_input\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_test.cpp: hls::stream<result_t> layer9_out(\"layer9_out\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_test.cpp: hls::stream<input_t> model_input(\"model_input\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_test.cpp: hls::stream<result_t> layer9_out(\"layer9_out\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_bridge.cpp: hls::stream<input_t> model_input_ap(\"model_input\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_bridge.cpp: hls::stream<result_t> layer9_out_ap(\"layer9_out\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_bridge.cpp: hls::stream<input_t> model_input_ap(\"model_input\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_bridge.cpp: hls::stream<result_t> layer9_out_ap(\"layer9_out\");",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/firmware/myproject.cpp: hls::stream<input_t> &model_input,",
+          "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/firmware/myproject.cpp: hls::stream<result_t> &layer9_out"
+        ]
+      },
+      "error": "CalledProcessError: Command '['/opt/conda/condabin/conda', 'run', '-n', 'fifo-advisor', 'fifo-advisor', '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1', '--baseline', '--output', '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/fifoadvisor_baseline.json']' returned non-zero exit status 1."
+    }
+  ]
+}

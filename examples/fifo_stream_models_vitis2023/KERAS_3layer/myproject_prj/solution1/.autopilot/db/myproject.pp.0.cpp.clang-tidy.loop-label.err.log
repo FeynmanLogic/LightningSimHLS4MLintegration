@@ -1,0 +1,5 @@
+6 warnings and 3 errors generated.
+Error while processing /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_3layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.
+clang-tidy applied 83 of 83 suggested fixes.
+Suppressed 254 warnings (248 in non-user code, 6 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

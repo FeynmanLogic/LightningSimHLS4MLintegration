@@ -1,0 +1,1067 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5559" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:402:36" msg_body="unexpected pragma argument 'softmax', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:33:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:107:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:189:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:57:63" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:57:67" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:61:70" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:61:74" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:65:70" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:65:74" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:69:70" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:69:74" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_helpers.h:285:99" msg_body="unused parameter 'keep'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:14:36" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:15:36" msg_body="unused parameter 'buffer'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:16:44" msg_body="unused parameter 'partition'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:24:24" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:25:24" msg_body="unused parameter 'buffer'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:26:32" msg_body="unused parameter 'partition'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:33:30" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:33:58" msg_body="unused parameter 'res'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:34:51" msg_body="unused parameter 'weights'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:35:49" msg_body="unused parameter 'biases'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:42:30" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:42:58" msg_body="unused parameter 'res'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:43:51" msg_body="unused parameter 'weights'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:44:49" msg_body="unused parameter 'biases'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:51:29" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:51:80" msg_body="unused parameter 'res'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:52:50" msg_body="unused parameter 'weights'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:53:48" msg_body="unused parameter 'biases'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_code_gen.h:16:39" msg_body="unused parameter 'data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_code_gen.h:17:38" msg_body="unused parameter 'res'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_code_gen.h:18:60" msg_body="unused parameter 'weights'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_code_gen.h:19:58" msg_body="unused parameter 'biases'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_types.h:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data_buf complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mult complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=CONFIG_T::reuse_factor rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mult complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights,biases" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=CONFIG_T::reuse_factor" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaOptions="operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv1d_latency.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv_1d_latency_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_shift" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_shift" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_shift" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_function_stubs.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_shift" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="linear" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="relu_max" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=exp_res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:201:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:247:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:253:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=exp_res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:269:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:362:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_argmax" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:370:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_argmax" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:382:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:401:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:402:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = softmax" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:406:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:408:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:410:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:415:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_multidim" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:452:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:481:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=table" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:482:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=table" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:485:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:496:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:511:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:529:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="leaky_relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:546:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="thresholded_relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:591:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softplus" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:640:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softsign" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:689:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="elu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:748:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="selu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:776:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prelu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:804:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="binary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation.h:824:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ternary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:125:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:146:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:187:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:207:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clone_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:230:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:237:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:247:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:270:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:274:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="repack_stream" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:295:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="broadcast_stream_1x1xC" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:298:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="broadcast_stream_1x1xC" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="broadcast_stream_1x1xC" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:316:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="broadcast_stream_HxWx1" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_stream.h:321:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="broadcast_stream_HxWx1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="linear" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="linear" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="relu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=exp_res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=ii" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="operation instances=mul limit=multiplier_limit" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:193:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data_array complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:196:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=ii" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:201:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:218:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=exp_res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:239:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_stable" ARG_PragmaIsValid="1" ARG_PragmaOptions="operation instances=mul limit=multiplier_limit" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:283:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:286:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:309:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_legacy" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:326:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_argmax" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:331:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_argmax" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softmax_argmax" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:390:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:398:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tanh" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:418:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=table" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:419:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=table complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:423:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=CONFIG_T::reuse_factor rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:431:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unary_lut" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:449:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:457:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_sigmoid" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:474:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:482:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hard_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:503:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="leaky_relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:511:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="leaky_relu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:529:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="thresholded_relu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:537:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="thresholded_relu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:568:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softplus" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:576:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softplus" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:609:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softsign" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:617:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="softsign" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:650:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="elu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:658:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="elu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:698:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="selu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="selu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:730:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prelu" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prelu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:756:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="binary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:765:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="binary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:784:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ternary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:792:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ternary_tanh" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights,biases" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=CONFIG_T::reuse_factor" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mult complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency" ARG_PragmaIsValid="1" ARG_PragmaOptions="operation instances=mul limit=CONFIG_T::multiplier_limit" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights,biases" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights block factor=block_factor" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights core=ROM_nP_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_leq_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights,biases" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:103:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights block factor=block_factor" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights core=ROM_nP_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin_rem0" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:184:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights,biases" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights block factor=block_factor" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:189:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights core=ROM_nP_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:193:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:197:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmpmult complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mult complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:229:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:239:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:249:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource_rf_gt_nin" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_resource" ARG_PragmaIsValid="1" ARG_PragmaOptions="recursive" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense.h:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense.h:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense.h:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense.h:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fill_mult" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights block factor=multiplier_limit" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mult complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_compressed.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_compressed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense_latency_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=CONFIG_T::reuse_factor" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_prepare" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_prepare" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_prepare" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_prepare" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="res_write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="res_write" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="res_write" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="res_write" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="recursive" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_3layer/build_prj.tcl:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=myproject" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=input_1,layer9_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer2_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer3_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer4_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer5_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer6_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer7_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer8_out depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:59:17" msg_body="Inlining function 'nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 70 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:93:2" msg_body="Inlining function 'void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;::value_type*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;::value_type*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 28 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:100:5" msg_body="Inlining function 'void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 53 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:59:17" msg_body="Inlining function 'nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 70 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:93:2" msg_body="Inlining function 'void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::value_type*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::value_type*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 28 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:100:5" msg_body="Inlining function 'void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 53 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:59:17" msg_body="Inlining function 'nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 70 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:93:2" msg_body="Inlining function 'void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 28 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:100:5" msg_body="Inlining function 'void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 53 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:59:17" msg_body="Inlining function 'nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="nnet::product::mult&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::product(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 70 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:93:2" msg_body="Inlining function 'void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="void nnet::data_prepare&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::value_type*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 28 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:100:5" msg_body="Inlining function 'void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="void nnet::res_write&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::value_type*, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 53 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:200:9" msg_body="Loop 'SoftmaxArrayPackLoop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="SoftmaxArrayPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:211:27" msg_body="Loop 'VITIS_LOOP_211_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_211_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:220:27" msg_body="Loop 'VITIS_LOOP_220_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_220_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:238:9" msg_body="Loop 'SoftmaxInvPackLoop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="SoftmaxInvPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:55:9" msg_body="Loop 'MultLoop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="MultLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:49:9" msg_body="Loop 'ReLUPackLoop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ReLUPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Unrolling loop 'SoftmaxArrayPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:200:9) in function 'nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:200:9" LoopName="SoftmaxArrayPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Unrolling loop 'VITIS_LOOP_211_1' (firmware/nnet_utils/nnet_activation_stream.h:211:27) in function 'nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:211:27" LoopName="VITIS_LOOP_211_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Unrolling loop 'VITIS_LOOP_220_2' (firmware/nnet_utils/nnet_activation_stream.h:220:27) in function 'nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:220:27" LoopName="VITIS_LOOP_220_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Unrolling loop 'SoftmaxInvPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:238:9) in function 'nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:238:9" LoopName="SoftmaxInvPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'ResPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:73:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:73:9" LoopName="ResPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'DataPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:45:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:45:9" LoopName="DataPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:80:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:80:5" LoopName="Result"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:55:9) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;' completely with a factor of 40">
+        <args Factor="40" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:55:9" LoopName="MultLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:40:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;' completely with a factor of 5">
+        <args Factor="5" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:40:5" LoopName="InitAccum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Unrolling loop 'ReLUPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:49:9) in function 'nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config7&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:49:9" LoopName="ReLUPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'ResPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:73:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:73:9" LoopName="ResPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'DataPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:45:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:45:9" LoopName="DataPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:80:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:80:5" LoopName="Result"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:55:9) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;' completely with a factor of 256">
+        <args Factor="256" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:55:9" LoopName="MultLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:40:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:40:5" LoopName="InitAccum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Unrolling loop 'ReLUPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:49:9) in function 'nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config5&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:49:9" LoopName="ReLUPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'ResPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:73:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:73:9" LoopName="ResPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'DataPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:45:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:45:9" LoopName="DataPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:80:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:80:5" LoopName="Result"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:55:9) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;' completely with a factor of 512">
+        <args Factor="512" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:55:9" LoopName="MultLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:40:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:40:5" LoopName="InitAccum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Unrolling loop 'ReLUPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:49:9) in function 'nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, relu_config3&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="firmware/nnet_utils/nnet_activation_stream.h:49:9" LoopName="ReLUPackLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'ResPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:73:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:73:9" LoopName="ResPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Unrolling loop 'DataPackSingle' (firmware/nnet_utils/nnet_dense_stream.h:45:9) in function 'nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/nnet_utils/nnet_dense_stream.h:45:9" LoopName="DataPackSingle"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:80:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:80:5" LoopName="Result"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:55:9) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;' completely with a factor of 256">
+        <args Factor="256" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:55:9" LoopName="MultLoop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:40:5) in function 'nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="firmware/nnet_utils/nnet_dense_resource.h:40:5" LoopName="InitAccum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 23 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, config2&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, config2::weight_t*, config2::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)' into 'void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, relu_config3&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, relu_config3&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Inlining function 'std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(config4::accum_t)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(config4::accum_t)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 110 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 23 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config4&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config4::weight_t*, config4::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)' into 'void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config5&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config5&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Inlining function 'std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(config6::accum_t)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(config6::accum_t)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 110 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)'">
+        <args Callee="void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config6::weight_t*, config6::bias_t*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 23 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, config6&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, config6::weight_t*, config6::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:39:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)' into 'void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config7&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::relu&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, relu_config7&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:15:0" msg_body="Inlining function 'std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(config8::accum_t)' into 'void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(config8::accum_t)" Callee-DebugLoc="File firmware/nnet_utils/nnet_mult.h Line 110 Column 0" Caller="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_resource.h Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="void nnet::dense_resource_wrapper&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)" Callee-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 23 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:84:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::operator[](unsigned long)' into 'void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::dense&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, config8&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, config8::weight_t*, config8::bias_t*)" Caller-DebugLoc="File firmware/nnet_utils/nnet_dense_stream.h Line 84 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 66 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 66 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.76)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.76)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 66 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 51 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 51 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_common.h:37:0" msg_body="Inlining function 'nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)' into 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.47.56)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 51 Column 0" Caller="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Inlining function 'nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::operator[](unsigned long)' into 'void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)'">
+        <args Callee="nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;::operator[](unsigned long)" Callee-DebugLoc="File firmware/nnet_utils/nnet_types.h Line 17 Column 0" Caller="void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_max&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Inlining function 'unsigned int nnet::softmax_idx_from_real_val&lt;ap_ufixed&lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1024u&gt;(ap_ufixed&lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)'">
+        <args Callee="unsigned int nnet::softmax_idx_from_real_val&lt;ap_ufixed&lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1024u&gt;(ap_ufixed&lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_activation.h Line 141 Column 0" Caller="void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Inlining function 'ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; nnet::reduce&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, nnet::Op_add&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_common.h Line 37 Column 0" Caller="void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation_stream.h:169:0" msg_body="Inlining function 'unsigned int nnet::softmax_idx_from_real_val&lt;ap_fixed&lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 1024u&gt;(ap_fixed&lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)'">
+        <args Callee="unsigned int nnet::softmax_idx_from_real_val&lt;ap_fixed&lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 1024u&gt;(ap_fixed&lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File firmware/nnet_utils/nnet_activation.h Line 141 Column 0" Caller="void nnet::softmax_stable&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, softmax_config9&gt;(hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;, hls::stream&lt;nnet::array&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File firmware/nnet_utils/nnet_activation_stream.h Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b2.h:12:0" msg_body="Applying array_partition to 'b2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b4.h:12:0" msg_body="Applying array_partition to 'b4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b6.h:12:0" msg_body="Applying array_partition to 'b6': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b8.h:12:0" msg_body="Applying array_partition to 'b8': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:36:32" msg_body="Applying array_partition to 'acc': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="acc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:87:30" msg_body="Applying array_partition to 'data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:90:29" msg_body="Applying array_partition to 'res': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="res"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:54:24" msg_body="Aggregating fifo (hls::stream) variable 'layer8_out' with compact=bit mode in 80-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="80" HwTyName="fifo (hls::stream)" Name="layer8_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:51:24" msg_body="Aggregating fifo (hls::stream) variable 'layer7_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="layer7_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:48:24" msg_body="Aggregating fifo (hls::stream) variable 'layer6_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="layer6_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:45:24" msg_body="Aggregating fifo (hls::stream) variable 'layer5_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="layer5_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:42:24" msg_body="Aggregating fifo (hls::stream) variable 'layer4_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="layer4_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:39:24" msg_body="Aggregating fifo (hls::stream) variable 'layer3_out' with compact=bit mode in 1024-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1024" HwTyName="fifo (hls::stream)" Name="layer3_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="firmware/myproject.cpp:36:24" msg_body="Aggregating fifo (hls::stream) variable 'layer2_out' with compact=bit mode in 1024-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1024" HwTyName="fifo (hls::stream)" Name="layer2_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/w2.h:12:0" msg_body="Applying array_reshape to 'w2': Block reshaping with factor 256 on dimension 1.">
+        <args Dim="1" Factor="256" Mode="Block" UOName="w2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/w4.h:12:0" msg_body="Applying array_reshape to 'w4': Block reshaping with factor 512 on dimension 1.">
+        <args Dim="1" Factor="512" Mode="Block" UOName="w4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/w6.h:12:0" msg_body="Applying array_reshape to 'w6': Block reshaping with factor 256 on dimension 1.">
+        <args Dim="1" Factor="256" Mode="Block" UOName="w6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/w8.h:12:0" msg_body="Applying array_reshape to 'w8': Block reshaping with factor 40 on dimension 1.">
+        <args Dim="1" Factor="40" Mode="Block" UOName="w8"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

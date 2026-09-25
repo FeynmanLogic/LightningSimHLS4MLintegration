@@ -1,0 +1,419 @@
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29504:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29504:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29518:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29518:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29532:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29532:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33009:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33009:7: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47589:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47589:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47601:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47601:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47618:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:47618:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59383:5: remark: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^
+    VITIS_LOOP_265_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59383:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59393:5: remark: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^
+    VITIS_LOOP_275_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59393:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59404:5: remark: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^
+    VITIS_LOOP_286_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59404:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59411:5: remark: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^
+    VITIS_LOOP_293_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59411:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59413:9: remark: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^
+        VITIS_LOOP_295_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59413:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59425:5: remark: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^
+    VITIS_LOOP_307_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59425:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59427:9: remark: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_309_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59427:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59442:5: remark: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_324_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59442:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59462:5: remark: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_344_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59462:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59463:9: remark: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^
+        VITIS_LOOP_345_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59463:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59478:5: remark: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_360_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59478:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59485:5: remark: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_367_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59485:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59795:5: remark: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_136_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59795:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59796:9: remark: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_137_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59796:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59817:5: remark: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_158_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59817:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59818:9: remark: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_159_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59818:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59965:5: remark: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_31_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59965:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59977:5: remark: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_43_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59977:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59991:5: remark: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_57_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59991:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60018:5: remark: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_84_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60018:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60048:5: remark: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_114_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60048:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60085:5: remark: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^
+    VITIS_LOOP_151_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60085:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60101:5: remark: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^
+    VITIS_LOOP_167_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60101:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60134:5: remark: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_200_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60134:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60147:5: remark: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_213_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60147:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60180:5: remark: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_246_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60180:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60189:5: remark: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_255_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60189:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60202:5: remark: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_268_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60202:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60209:5: remark: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_275_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60209:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60222:5: remark: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_288_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60222:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60259:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_325_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60259:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60264:5: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_330_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60264:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60265:9: remark: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^
+        VITIS_LOOP_331_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60265:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60282:5: remark: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_348_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60282:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60295:5: remark: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_361_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60295:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60303:5: remark: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_369_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60303:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60339:5: remark: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^
+    VITIS_LOOP_405_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60339:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60341:9: remark: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+        for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+        ^
+        VITIS_LOOP_407_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60341:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60343:13: remark: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_409_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60343:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60348:13: remark: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_414_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60348:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60361:5: remark: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_427_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60361:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60391:5: remark: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_457_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60391:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60418:5: remark: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_484_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60418:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60432:5: remark: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_498_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60432:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60448:5: remark: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_514_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60448:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60466:5: remark: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_532_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60466:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60483:5: remark: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_549_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60483:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60500:5: remark: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_566_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60500:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60530:5: remark: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_596_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60530:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60549:5: remark: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_615_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60549:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60579:5: remark: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_645_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60579:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60598:5: remark: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_664_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60598:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60628:5: remark: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_694_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60628:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60655:5: remark: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_721_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60655:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60683:5: remark: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_749_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60683:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60713:5: remark: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_779_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60713:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60742:5: remark: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_808_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60742:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60762:5: remark: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_828_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60762:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61007:9: remark: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_229_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61007:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61014:13: remark: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_236_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61014:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61023:9: remark: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_245_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61023:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61032:13: remark: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^
+            VITIS_LOOP_254_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61032:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61036:17: remark: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^
+                VITIS_LOOP_258_5: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61036:17: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61047:9: remark: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_269_6: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61047:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61051:13: remark: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_273_7: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61051:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61075:9: remark: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^
+        VITIS_LOOP_297_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61075:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61079:13: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^
+            VITIS_LOOP_301_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61079:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61098:9: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^
+        VITIS_LOOP_320_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61098:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61322:9: remark: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_211_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61322:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61331:9: remark: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_220_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61331:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61436:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^
+    VITIS_LOOP_325_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61436:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61441:9: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_330_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61441:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61449:9: remark: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_338_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61449:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62052:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62126:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62208:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62381:5: remark: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^
+    VITIS_LOOP_14_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62381:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62441:9: remark: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^
+        VITIS_LOOP_74_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62441:9: note: FIX-IT applied suggested code changes

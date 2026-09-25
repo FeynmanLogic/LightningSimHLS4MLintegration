@@ -1,0 +1,1 @@
+/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/lnx64/tools/clang-3.9-csynth/bin/llvm-dis: warning: ignoring debug info with an invalid version (0) in /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/a.o.3.bc

@@ -1,0 +1,11 @@
+000000000009d708 T apatb_myproject_hw
+000000000008b5d0 T apatb_myproject_ir
+00000000000a4640 T __hlslitesim_fifo_read
+00000000000a4740 T __hlslitesim_fifo_write
+00000000000a4930 T __hlslitesim_fputs
+00000000000b07d8 B __hlslitesim_trace_fd
+000000000000c020 T myproject
+00000000000a48b0 T __hlslitesim_trace_fd_t::__hlslitesim_trace_fd_t()
+00000000000a48b0 T __hlslitesim_trace_fd_t::__hlslitesim_trace_fd_t()
+00000000000a4890 T __hlslitesim_trace_fd_t::~__hlslitesim_trace_fd_t()
+00000000000a4890 T __hlslitesim_trace_fd_t::~__hlslitesim_trace_fd_t()

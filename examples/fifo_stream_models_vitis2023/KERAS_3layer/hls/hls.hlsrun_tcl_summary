@@ -1,0 +1,79 @@
+<ENTRY>
+{
+ "thisFile": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_3layer/hls/hls.hlsrun_tcl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Sep 21 23:22:31 2026",
+ "timestampMillis": "1790047351459",
+ "buildStep": {
+  "cmdId": "867cae73-dc95-461d-9b15-f0b8d5dee610",
+  "name": "vitis-run",
+  "logFile": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_3layer/hls/logs/hls.steps.log",
+  "commandLine": "/tools/software/xilinx/ARCHIVE/Vitis/2023.1/bin/unwrapped/lnx64.o/vitis-run  --tcl build_prj.tcl --mode hls ",
+  "args": [
+   "--tcl",
+   "build_prj.tcl",
+   "--mode",
+   "hls"
+  ],
+  "iniFiles": [],
+  "cwd": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_3layer"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 21 23:22:31 2026",
+ "timestampMillis": "1790047351463",
+ "status": {
+  "cmdId": "867cae73-dc95-461d-9b15-f0b8d5dee610",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 21 23:27:21 2026",
+ "timestampMillis": "1790047641065",
+ "status": {
+  "cmdId": "867cae73-dc95-461d-9b15-f0b8d5dee610",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Sep 21 23:27:21 2026",
+ "timestampMillis": "1790047641067",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Sep 21 23:27:21 2026",
+ "timestampMillis": "1790047641069",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

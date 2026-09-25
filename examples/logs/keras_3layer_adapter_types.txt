@@ -1,0 +1,77 @@
+===== INPUT AND OUTPUT TYPES =====
+17:typedef nnet::array<ap_fixed<16,6>, 16*1> input_t;
+19:typedef nnet::array<ap_fixed<16,6>, 64*1> layer2_t;
+31:typedef nnet::array<ap_fixed<16,6>, 5*1> layer8_t;
+33:typedef nnet::array<ap_fixed<16,6>, 5*1> result_t;
+
+===== TESTBENCH BODY =====
+            char *cstr = const_cast<char *>(iline.c_str());
+            char *current;
+            std::vector<float> in;
+            current = strtok(cstr, " ");
+            while (current != NULL) {
+                in.push_back(atof(current));
+                current = strtok(NULL, " ");
+            }
+            cstr = const_cast<char *>(pline.c_str());
+            std::vector<float> pr;
+            current = strtok(cstr, " ");
+            while (current != NULL) {
+                pr.push_back(atof(current));
+                current = strtok(NULL, " ");
+            }
+
+            // hls-fpga-machine-learning insert data
+      hls::stream<input_t> input_1("input_1");
+      nnet::copy_data<float, input_t, 0, 16>(in, input_1);
+      hls::stream<result_t> layer9_out("layer9_out");
+
+            // hls-fpga-machine-learning insert top-level-function
+            myproject(input_1,layer9_out);
+
+            if (e % CHECKPOINT == 0) {
+                std::cout << "Predictions" << std::endl;
+                // hls-fpga-machine-learning insert predictions
+                for(int i = 0; i < 5; i++) {
+                  std::cout << pr[i] << " ";
+                }
+                std::cout << std::endl;
+                std::cout << "Quantized predictions" << std::endl;
+                // hls-fpga-machine-learning insert quantized
+                nnet::print_result<result_t, 5>(layer9_out, std::cout, true);
+            }
+            e++;
+
+            // hls-fpga-machine-learning insert tb-output
+            nnet::print_result<result_t, 5>(layer9_out, fout);
+        }
+        fin.close();
+        fpr.close();
+    } else {
+        std::cout << "INFO: Unable to open input/predictions file, using default input." << std::endl;
+        const unsigned NUM_TEST_SAMPLES = 5;
+        for (unsigned i = 0; i < NUM_TEST_SAMPLES; i++) {
+            // hls-fpga-machine-learning insert zero
+            hls::stream<input_t> input_1("input_1");
+            nnet::fill_zero<input_t, 16>(input_1);
+            hls::stream<result_t> layer9_out("layer9_out");
+
+            // hls-fpga-machine-learning insert top-level-function
+            myproject(input_1,layer9_out);
+
+            // hls-fpga-machine-learning insert output
+            nnet::print_result<result_t, 5>(layer9_out, std::cout, true);
+
+            // hls-fpga-machine-learning insert tb-output
+            nnet::print_result<result_t, 5>(layer9_out, fout);
+        }
+    }
+
+    fout.close();
+    std::cout << "INFO: Saved inference results to file: " << RESULTS_LOG << std::endl;
+
+    return 0;
+}
+
+===== NNET ARRAY DEFINITION =====
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_types.h:11:template <typename T, unsigned N> struct array {

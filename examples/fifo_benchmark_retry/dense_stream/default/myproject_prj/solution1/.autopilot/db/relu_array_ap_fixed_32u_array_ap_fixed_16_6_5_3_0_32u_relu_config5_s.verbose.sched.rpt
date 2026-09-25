@@ -1,0 +1,255 @@
+
+
+================================================================
+== Vitis HLS Report for 'relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s'
+================================================================
+* Date:           Mon Sep 21 18:27:08 2026
+
+* Version:        2025.2.1 (Build 6397637 on Mar 18 2026)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.642 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 4 [1/1] ( I:1.82ns O:1.82ns )   --->   "%layer4_out_read = read i1248 @_ssdm_op_Read.ap_fifo.volatile.i1248P0A, i1248 %layer4_out" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 4 'read' 'layer4_out_read' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1248> <Depth = 1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%trunc_ln44 = trunc i1248 %layer4_out_read" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 5 'trunc' 'trunc_ln44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%trunc_ln44_1 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 39, i32 77" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 6 'partselect' 'trunc_ln44_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln44_2 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 78, i32 116" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 7 'partselect' 'trunc_ln44_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln44_3 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 117, i32 155" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 8 'partselect' 'trunc_ln44_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln44_4 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 156, i32 194" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 9 'partselect' 'trunc_ln44_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln44_5 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 195, i32 233" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 10 'partselect' 'trunc_ln44_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%trunc_ln44_6 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 234, i32 272" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 11 'partselect' 'trunc_ln44_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln44_7 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 273, i32 311" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 12 'partselect' 'trunc_ln44_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%trunc_ln44_8 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 312, i32 350" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 13 'partselect' 'trunc_ln44_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln44_9 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 351, i32 389" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 14 'partselect' 'trunc_ln44_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln44_10 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 390, i32 428" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 15 'partselect' 'trunc_ln44_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln44_11 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 429, i32 467" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 16 'partselect' 'trunc_ln44_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln44_12 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 468, i32 506" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 17 'partselect' 'trunc_ln44_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln44_13 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 507, i32 545" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 18 'partselect' 'trunc_ln44_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln44_14 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 546, i32 584" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 19 'partselect' 'trunc_ln44_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln44_15 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 585, i32 623" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 20 'partselect' 'trunc_ln44_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln44_16 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 624, i32 662" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 21 'partselect' 'trunc_ln44_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln44_17 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 663, i32 701" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 22 'partselect' 'trunc_ln44_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln44_18 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 702, i32 740" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 23 'partselect' 'trunc_ln44_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln44_19 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 741, i32 779" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 24 'partselect' 'trunc_ln44_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln44_20 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 780, i32 818" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 25 'partselect' 'trunc_ln44_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln44_21 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 819, i32 857" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 26 'partselect' 'trunc_ln44_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln44_22 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 858, i32 896" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 27 'partselect' 'trunc_ln44_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln44_23 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 897, i32 935" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 28 'partselect' 'trunc_ln44_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln44_24 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 936, i32 974" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 29 'partselect' 'trunc_ln44_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%trunc_ln44_25 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 975, i32 1013" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 30 'partselect' 'trunc_ln44_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%trunc_ln44_26 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1014, i32 1052" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 31 'partselect' 'trunc_ln44_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln44_27 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1053, i32 1091" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 32 'partselect' 'trunc_ln44_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%trunc_ln44_28 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1092, i32 1130" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 33 'partselect' 'trunc_ln44_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln44_29 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1131, i32 1169" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 34 'partselect' 'trunc_ln44_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln44_30 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1170, i32 1208" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 35 'partselect' 'trunc_ln44_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln44_31 = partselect i39 @_ssdm_op_PartSelect.i39.i1248.i32.i32, i1248 %layer4_out_read, i32 1209, i32 1247" [firmware/nnet_utils/nnet_activation_stream.h:44]   --->   Operation 36 'partselect' 'trunc_ln44_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln6 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 10, i32 25" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 37 'partselect' 'trunc_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln52_1 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 49, i32 64" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 38 'partselect' 'trunc_ln52_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%trunc_ln52_2 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 88, i32 103" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 39 'partselect' 'trunc_ln52_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln52_3 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 127, i32 142" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 40 'partselect' 'trunc_ln52_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln52_4 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 166, i32 181" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 41 'partselect' 'trunc_ln52_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln52_5 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 205, i32 220" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 42 'partselect' 'trunc_ln52_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln52_6 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 244, i32 259" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 43 'partselect' 'trunc_ln52_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln52_7 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 283, i32 298" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 44 'partselect' 'trunc_ln52_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln52_8 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 322, i32 337" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 45 'partselect' 'trunc_ln52_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln52_9 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 361, i32 376" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 46 'partselect' 'trunc_ln52_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln52_10 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 400, i32 415" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 47 'partselect' 'trunc_ln52_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln52_11 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 439, i32 454" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 48 'partselect' 'trunc_ln52_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%trunc_ln52_12 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 478, i32 493" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 49 'partselect' 'trunc_ln52_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln52_13 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 517, i32 532" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 50 'partselect' 'trunc_ln52_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln52_14 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 556, i32 571" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 51 'partselect' 'trunc_ln52_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln52_15 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 595, i32 610" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 52 'partselect' 'trunc_ln52_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln52_16 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 634, i32 649" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 53 'partselect' 'trunc_ln52_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln52_17 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 673, i32 688" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 54 'partselect' 'trunc_ln52_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln52_18 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 712, i32 727" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 55 'partselect' 'trunc_ln52_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln52_19 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 751, i32 766" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 56 'partselect' 'trunc_ln52_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln52_20 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 790, i32 805" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 57 'partselect' 'trunc_ln52_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%trunc_ln52_21 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 829, i32 844" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 58 'partselect' 'trunc_ln52_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln52_22 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 868, i32 883" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 59 'partselect' 'trunc_ln52_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln52_23 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 907, i32 922" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 60 'partselect' 'trunc_ln52_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln52_24 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 946, i32 961" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 61 'partselect' 'trunc_ln52_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%trunc_ln52_25 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 985, i32 1000" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 62 'partselect' 'trunc_ln52_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln52_26 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1024, i32 1039" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 63 'partselect' 'trunc_ln52_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln52_27 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1063, i32 1078" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 64 'partselect' 'trunc_ln52_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln52_28 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1102, i32 1117" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 65 'partselect' 'trunc_ln52_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln52_29 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1141, i32 1156" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 66 'partselect' 'trunc_ln52_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln52_30 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1180, i32 1195" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 67 'partselect' 'trunc_ln52_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln52_31 = partselect i16 @_ssdm_op_PartSelect.i16.i1248.i32.i32, i1248 %layer4_out_read, i32 1219, i32 1234" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 68 'partselect' 'trunc_ln52_31' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.64>
+ST_2 : Operation 69 [1/1] (2.83ns)   --->   "%icmp_ln51 = icmp_sgt  i39 %trunc_ln44, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 69 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.80ns)   --->   "%select_ln51 = select i1 %icmp_ln51, i16 %trunc_ln6, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 70 'select' 'select_ln51' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 71 [1/1] (2.83ns)   --->   "%icmp_ln51_1 = icmp_sgt  i39 %trunc_ln44_1, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 71 'icmp' 'icmp_ln51_1' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 72 [1/1] (0.80ns)   --->   "%select_ln51_1 = select i1 %icmp_ln51_1, i16 %trunc_ln52_1, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 72 'select' 'select_ln51_1' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 73 [1/1] (2.83ns)   --->   "%icmp_ln51_2 = icmp_sgt  i39 %trunc_ln44_2, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 73 'icmp' 'icmp_ln51_2' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.80ns)   --->   "%select_ln51_2 = select i1 %icmp_ln51_2, i16 %trunc_ln52_2, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 74 'select' 'select_ln51_2' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 75 [1/1] (2.83ns)   --->   "%icmp_ln51_3 = icmp_sgt  i39 %trunc_ln44_3, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 75 'icmp' 'icmp_ln51_3' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 76 [1/1] (0.80ns)   --->   "%select_ln51_3 = select i1 %icmp_ln51_3, i16 %trunc_ln52_3, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 76 'select' 'select_ln51_3' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 77 [1/1] (2.83ns)   --->   "%icmp_ln51_4 = icmp_sgt  i39 %trunc_ln44_4, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 77 'icmp' 'icmp_ln51_4' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 78 [1/1] (0.80ns)   --->   "%select_ln51_4 = select i1 %icmp_ln51_4, i16 %trunc_ln52_4, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 78 'select' 'select_ln51_4' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (2.83ns)   --->   "%icmp_ln51_5 = icmp_sgt  i39 %trunc_ln44_5, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 79 'icmp' 'icmp_ln51_5' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 80 [1/1] (0.80ns)   --->   "%select_ln51_5 = select i1 %icmp_ln51_5, i16 %trunc_ln52_5, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 80 'select' 'select_ln51_5' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (2.83ns)   --->   "%icmp_ln51_6 = icmp_sgt  i39 %trunc_ln44_6, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 81 'icmp' 'icmp_ln51_6' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (0.80ns)   --->   "%select_ln51_6 = select i1 %icmp_ln51_6, i16 %trunc_ln52_6, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 82 'select' 'select_ln51_6' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (2.83ns)   --->   "%icmp_ln51_7 = icmp_sgt  i39 %trunc_ln44_7, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 83 'icmp' 'icmp_ln51_7' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (0.80ns)   --->   "%select_ln51_7 = select i1 %icmp_ln51_7, i16 %trunc_ln52_7, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 84 'select' 'select_ln51_7' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 85 [1/1] (2.83ns)   --->   "%icmp_ln51_8 = icmp_sgt  i39 %trunc_ln44_8, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 85 'icmp' 'icmp_ln51_8' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.80ns)   --->   "%select_ln51_8 = select i1 %icmp_ln51_8, i16 %trunc_ln52_8, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 86 'select' 'select_ln51_8' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (2.83ns)   --->   "%icmp_ln51_9 = icmp_sgt  i39 %trunc_ln44_9, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 87 'icmp' 'icmp_ln51_9' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 88 [1/1] (0.80ns)   --->   "%select_ln51_9 = select i1 %icmp_ln51_9, i16 %trunc_ln52_9, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 88 'select' 'select_ln51_9' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 89 [1/1] (2.83ns)   --->   "%icmp_ln51_10 = icmp_sgt  i39 %trunc_ln44_10, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 89 'icmp' 'icmp_ln51_10' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 90 [1/1] (0.80ns)   --->   "%select_ln51_10 = select i1 %icmp_ln51_10, i16 %trunc_ln52_10, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 90 'select' 'select_ln51_10' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 91 [1/1] (2.83ns)   --->   "%icmp_ln51_11 = icmp_sgt  i39 %trunc_ln44_11, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 91 'icmp' 'icmp_ln51_11' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (0.80ns)   --->   "%select_ln51_11 = select i1 %icmp_ln51_11, i16 %trunc_ln52_11, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 92 'select' 'select_ln51_11' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (2.83ns)   --->   "%icmp_ln51_12 = icmp_sgt  i39 %trunc_ln44_12, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 93 'icmp' 'icmp_ln51_12' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.80ns)   --->   "%select_ln51_12 = select i1 %icmp_ln51_12, i16 %trunc_ln52_12, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 94 'select' 'select_ln51_12' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 95 [1/1] (2.83ns)   --->   "%icmp_ln51_13 = icmp_sgt  i39 %trunc_ln44_13, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 95 'icmp' 'icmp_ln51_13' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 96 [1/1] (0.80ns)   --->   "%select_ln51_13 = select i1 %icmp_ln51_13, i16 %trunc_ln52_13, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 96 'select' 'select_ln51_13' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 97 [1/1] (2.83ns)   --->   "%icmp_ln51_14 = icmp_sgt  i39 %trunc_ln44_14, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 97 'icmp' 'icmp_ln51_14' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (0.80ns)   --->   "%select_ln51_14 = select i1 %icmp_ln51_14, i16 %trunc_ln52_14, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 98 'select' 'select_ln51_14' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 99 [1/1] (2.83ns)   --->   "%icmp_ln51_15 = icmp_sgt  i39 %trunc_ln44_15, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 99 'icmp' 'icmp_ln51_15' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 100 [1/1] (0.80ns)   --->   "%select_ln51_15 = select i1 %icmp_ln51_15, i16 %trunc_ln52_15, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 100 'select' 'select_ln51_15' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 101 [1/1] (2.83ns)   --->   "%icmp_ln51_16 = icmp_sgt  i39 %trunc_ln44_16, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 101 'icmp' 'icmp_ln51_16' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 102 [1/1] (0.80ns)   --->   "%select_ln51_16 = select i1 %icmp_ln51_16, i16 %trunc_ln52_16, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 102 'select' 'select_ln51_16' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 103 [1/1] (2.83ns)   --->   "%icmp_ln51_17 = icmp_sgt  i39 %trunc_ln44_17, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 103 'icmp' 'icmp_ln51_17' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (0.80ns)   --->   "%select_ln51_17 = select i1 %icmp_ln51_17, i16 %trunc_ln52_17, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 104 'select' 'select_ln51_17' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 105 [1/1] (2.83ns)   --->   "%icmp_ln51_18 = icmp_sgt  i39 %trunc_ln44_18, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 105 'icmp' 'icmp_ln51_18' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 106 [1/1] (0.80ns)   --->   "%select_ln51_18 = select i1 %icmp_ln51_18, i16 %trunc_ln52_18, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 106 'select' 'select_ln51_18' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (2.83ns)   --->   "%icmp_ln51_19 = icmp_sgt  i39 %trunc_ln44_19, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 107 'icmp' 'icmp_ln51_19' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (0.80ns)   --->   "%select_ln51_19 = select i1 %icmp_ln51_19, i16 %trunc_ln52_19, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 108 'select' 'select_ln51_19' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 109 [1/1] (2.83ns)   --->   "%icmp_ln51_20 = icmp_sgt  i39 %trunc_ln44_20, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 109 'icmp' 'icmp_ln51_20' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 110 [1/1] (0.80ns)   --->   "%select_ln51_20 = select i1 %icmp_ln51_20, i16 %trunc_ln52_20, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 110 'select' 'select_ln51_20' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 111 [1/1] (2.83ns)   --->   "%icmp_ln51_21 = icmp_sgt  i39 %trunc_ln44_21, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 111 'icmp' 'icmp_ln51_21' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 112 [1/1] (0.80ns)   --->   "%select_ln51_21 = select i1 %icmp_ln51_21, i16 %trunc_ln52_21, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 112 'select' 'select_ln51_21' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 113 [1/1] (2.83ns)   --->   "%icmp_ln51_22 = icmp_sgt  i39 %trunc_ln44_22, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 113 'icmp' 'icmp_ln51_22' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 114 [1/1] (0.80ns)   --->   "%select_ln51_22 = select i1 %icmp_ln51_22, i16 %trunc_ln52_22, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 114 'select' 'select_ln51_22' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 115 [1/1] (2.83ns)   --->   "%icmp_ln51_23 = icmp_sgt  i39 %trunc_ln44_23, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 115 'icmp' 'icmp_ln51_23' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 116 [1/1] (0.80ns)   --->   "%select_ln51_23 = select i1 %icmp_ln51_23, i16 %trunc_ln52_23, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 116 'select' 'select_ln51_23' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 117 [1/1] (2.83ns)   --->   "%icmp_ln51_24 = icmp_sgt  i39 %trunc_ln44_24, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 117 'icmp' 'icmp_ln51_24' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 118 [1/1] (0.80ns)   --->   "%select_ln51_24 = select i1 %icmp_ln51_24, i16 %trunc_ln52_24, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 118 'select' 'select_ln51_24' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 119 [1/1] (2.83ns)   --->   "%icmp_ln51_25 = icmp_sgt  i39 %trunc_ln44_25, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 119 'icmp' 'icmp_ln51_25' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 120 [1/1] (0.80ns)   --->   "%select_ln51_25 = select i1 %icmp_ln51_25, i16 %trunc_ln52_25, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 120 'select' 'select_ln51_25' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 121 [1/1] (2.83ns)   --->   "%icmp_ln51_26 = icmp_sgt  i39 %trunc_ln44_26, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 121 'icmp' 'icmp_ln51_26' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 122 [1/1] (0.80ns)   --->   "%select_ln51_26 = select i1 %icmp_ln51_26, i16 %trunc_ln52_26, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 122 'select' 'select_ln51_26' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 123 [1/1] (2.83ns)   --->   "%icmp_ln51_27 = icmp_sgt  i39 %trunc_ln44_27, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 123 'icmp' 'icmp_ln51_27' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 124 [1/1] (0.80ns)   --->   "%select_ln51_27 = select i1 %icmp_ln51_27, i16 %trunc_ln52_27, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 124 'select' 'select_ln51_27' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 125 [1/1] (2.83ns)   --->   "%icmp_ln51_28 = icmp_sgt  i39 %trunc_ln44_28, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 125 'icmp' 'icmp_ln51_28' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 126 [1/1] (0.80ns)   --->   "%select_ln51_28 = select i1 %icmp_ln51_28, i16 %trunc_ln52_28, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 126 'select' 'select_ln51_28' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 127 [1/1] (2.83ns)   --->   "%icmp_ln51_29 = icmp_sgt  i39 %trunc_ln44_29, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 127 'icmp' 'icmp_ln51_29' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 128 [1/1] (0.80ns)   --->   "%select_ln51_29 = select i1 %icmp_ln51_29, i16 %trunc_ln52_29, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 128 'select' 'select_ln51_29' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 129 [1/1] (2.83ns)   --->   "%icmp_ln51_30 = icmp_sgt  i39 %trunc_ln44_30, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 129 'icmp' 'icmp_ln51_30' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 130 [1/1] (0.80ns)   --->   "%select_ln51_30 = select i1 %icmp_ln51_30, i16 %trunc_ln52_30, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 130 'select' 'select_ln51_30' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 131 [1/1] (2.83ns)   --->   "%icmp_ln51_31 = icmp_sgt  i39 %trunc_ln44_31, i39 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 131 'icmp' 'icmp_ln51_31' <Predicate = true> <Delay = 2.83> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.83> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 132 [1/1] (0.80ns)   --->   "%select_ln51_31 = select i1 %icmp_ln51_31, i16 %trunc_ln52_31, i16 0" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 132 'select' 'select_ln51_31' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.82>
+ST_3 : Operation 133 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer5_out, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 133 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1248 %layer4_out, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 134 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 135 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16, i16 %select_ln51_31, i16 %select_ln51_30, i16 %select_ln51_29, i16 %select_ln51_28, i16 %select_ln51_27, i16 %select_ln51_26, i16 %select_ln51_25, i16 %select_ln51_24, i16 %select_ln51_23, i16 %select_ln51_22, i16 %select_ln51_21, i16 %select_ln51_20, i16 %select_ln51_19, i16 %select_ln51_18, i16 %select_ln51_17, i16 %select_ln51_16, i16 %select_ln51_15, i16 %select_ln51_14, i16 %select_ln51_13, i16 %select_ln51_12, i16 %select_ln51_11, i16 %select_ln51_10, i16 %select_ln51_9, i16 %select_ln51_8, i16 %select_ln51_7, i16 %select_ln51_6, i16 %select_ln51_5, i16 %select_ln51_4, i16 %select_ln51_3, i16 %select_ln51_2, i16 %select_ln51_1, i16 %select_ln51" [firmware/nnet_utils/nnet_activation_stream.h:57]   --->   Operation 135 'bitconcatenate' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 136 [1/1] ( I:1.82ns O:1.82ns )   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %layer5_out, i512 %p_s" [firmware/nnet_utils/nnet_activation_stream.h:57]   --->   Operation 136 'write' 'write_ln57' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_3 : Operation 137 [1/1] (0.00ns)   --->   "%ret_ln59 = ret" [firmware/nnet_utils/nnet_activation_stream.h:59]   --->   Operation 137 'ret' 'ret_ln59' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 1.825ns
+The critical path consists of the following:
+	fifo read operation ('layer4_out_read', firmware/nnet_utils/nnet_activation_stream.h:44) on port 'layer4_out' (firmware/nnet_utils/nnet_activation_stream.h:44) [5]  (1.825 ns)
+
+ <State 2>: 3.642ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln51', firmware/nnet_utils/nnet_activation_stream.h:51) [38]  (2.837 ns)
+	'select' operation 16 bit ('select_ln51', firmware/nnet_utils/nnet_activation_stream.h:51) [40]  (0.805 ns)
+
+ <State 3>: 1.825ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_activation_stream.h:57) on port 'layer5_out' (firmware/nnet_utils/nnet_activation_stream.h:57) [135]  (1.825 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

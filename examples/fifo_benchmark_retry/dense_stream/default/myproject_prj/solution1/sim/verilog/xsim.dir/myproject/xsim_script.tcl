@@ -1,0 +1,1 @@
+xsim {myproject} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=myproject_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{myproject_dataflow_ana.wcfg}} -tclbatch {myproject.tcl} -protoinst {myproject.protoinst}

@@ -1,0 +1,100 @@
+DEBUG conda.gateways.logging:set_log_level(234): log_level set to 10
+DEBUG conda.base.context:root_writable(696): [Errno 13] Permission denied: '/opt/conda/conda-meta/history'
+DEBUG conda.gateways.subprocess:subprocess_call(97): executing>> /usr/bin/bash /tmp/tmp9ju0b9cm
+[22:25:25] [INFO] LightningSim: Analyzing project...
+warning: ignoring debug info with an invalid version (0) in 
+[22:25:26] [INFO] LightningSim: Compiling project...
+Intermediate objects are being written to /tmp/lightningsim.rp2181dv
+Build artifacts are being written to /tmp/lightningsim.27w7ude_
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/bin/lightningsim", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/main.py", line 540, in main
+    return run(run_simple(solution_dir, debug=args.debug))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/main.py", line 441, in run_simple
+    trace = await runner.run()
+            ^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 533, in run
+    compile_util.check_returncode()
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 125, in check_returncode
+    raise RuntimeError(message)
+RuntimeError: command x86_64-conda-linux-gnu-cc -std=c++14 -DRTL_SIM -I /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/include -I /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/lnx64/tools/systemc/include -I /nethome/dkulkarni47/.conda/envs/fifo-advisor/share/lightningsim/systemc/include -c /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp -g -fpermissive -o /tmp/lightningsim.rp2181dv/apatb_myproject_util.o returned non-zero exit status 1 with output:
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp: In function 'bool fpga_fifo_exist_10(hls::stream<__cosim_T_10__>*)':
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:18:16: error: 'class hls::stream<__cosim_T_10__>' has no member named 'exist'
+>    18 |   return fifo->exist();
+>       |                ^~~~~
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp: In function 'bool fpga_fifo_exist_32(hls::stream<__cosim_T_32__>*)':
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:40:16: error: 'class hls::stream<__cosim_T_32__>' has no member named 'exist'
+>    40 |   return fifo->exist();
+>       |                ^~~~~
+[22:25:31] [ERROR] asyncio: _GatheringFuture exception was never retrieved
+future: <_GatheringFuture finished exception=CancelledError()>
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/bin/lightningsim", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/main.py", line 540, in main
+    return run(run_simple(solution_dir, debug=args.debug))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/main.py", line 441, in run_simple
+    trace = await runner.run()
+            ^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 533, in run
+    compile_util.check_returncode()
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 125, in check_returncode
+    raise RuntimeError(message)
+RuntimeError: command x86_64-conda-linux-gnu-cc -std=c++14 -DRTL_SIM -I /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/include -I /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/lnx64/tools/systemc/include -I /nethome/dkulkarni47/.conda/envs/fifo-advisor/share/lightningsim/systemc/include -c /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp -g -fpermissive -o /tmp/lightningsim.rp2181dv/apatb_myproject_util.o returned non-zero exit status 1 with output:
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp: In function 'bool fpga_fifo_exist_10(hls::stream<__cosim_T_10__>*)':
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:18:16: error: 'class hls::stream<__cosim_T_10__>' has no member named 'exist'
+>    18 |   return fifo->exist();
+>       |                ^~~~~
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp: In function 'bool fpga_fifo_exist_32(hls::stream<__cosim_T_32__>*)':
+> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:40:16: error: 'class hls::stream<__cosim_T_32__>' has no member named 'exist'
+>    40 |   return fifo->exist();
+>       |                ^~~~~
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 294, in compile_project_file
+    compilation = await run(
+                  ^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/site-packages/lightningsim/runner.py", line 138, in run
+    stdout, stderr = await process.communicate()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/streams.py", line 706, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/streams.py", line 713, in read
+    await self._wait_for_data('read')
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor/lib/python3.12/asyncio/streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+ERROR conda.cli.main_run:execute(125): `conda run lightningsim --debug --cli /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1` failed. (See above for error)
+LightningSim exit status: 1

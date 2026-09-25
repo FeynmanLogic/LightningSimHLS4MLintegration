@@ -1,0 +1,1846 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 59, 
+                   Column: 17 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 93, 
+                   Column: 2 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::data_prepare<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::value_type*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 28, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 100, 
+                   Column: 5 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::res_write<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>::value_type*, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 53, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 59, 
+                   Column: 17 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 93, 
+                   Column: 2 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::data_prepare<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>::value_type*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 28, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 100, 
+                   Column: 5 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::res_write<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::value_type*, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 53, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 59, 
+                   Column: 17 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 93, 
+                   Column: 2 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::data_prepare<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::value_type*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 28, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 100, 
+                   Column: 5 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::res_write<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::value_type*, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 53, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 59, 
+                   Column: 17 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 93, 
+                   Column: 2 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::data_prepare<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::value_type*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 28, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 100, 
+                   Column: 5 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::res_write<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>::value_type*, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 53, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 200, Column: 9 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        SoftmaxArrayPackLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 211, Column: 27 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_211_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 220, Column: 27 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_220_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 238, Column: 9 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        SoftmaxInvPackLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 55, 
+                   Column: 9 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        MultLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 49, Column: 9 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config7EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 55, 
+                   Column: 9 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        MultLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 49, Column: 9 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config5EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 55, 
+                   Column: 9 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        MultLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 49, Column: 9 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEES6_12relu_config3EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 55, 
+                   Column: 9 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        MultLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SoftmaxArrayPackLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:200:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_211_1
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:211:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_220_2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:220:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SoftmaxInvPackLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:238:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ResPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:73:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DataPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:45:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Result
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:80:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        MultLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:55:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        InitAccum
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:40:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config7EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:49:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, relu_config7>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ResPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:73:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DataPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:45:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Result
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:80:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        MultLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:55:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '256'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        InitAccum
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:40:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config5EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:49:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, relu_config5>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ResPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:73:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DataPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:45:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Result
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:80:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        MultLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:55:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        InitAccum
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:40:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEES6_12relu_config3EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ReLUPackLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_activation_stream.h:49:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, relu_config3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ResPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:73:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DataPackSingle
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_stream.h:45:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Result
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:80:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        MultLoop
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:55:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '256'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        InitAccum
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_resource.h:40:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense_resource_wrapper<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 23, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, config2>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEES6_12relu_config3EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, relu_config3>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(config4::accum_t)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 110, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense_resource_wrapper<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 23, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config4>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 64u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config5EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, relu_config5>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(config6::accum_t)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 110, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense_resource_wrapper<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 23, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, config6>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, config6::weight_t*, config6::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 39, Column: 0 }
+Function:        _ZN4nnet4reluINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_12relu_config7EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::relu<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, relu_config7>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(config8::accum_t)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 110, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense_resource_wrapper<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 23, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                   Column: 0 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, config8>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 32u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 84, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi2ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 66, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi4ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi4ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 66, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 1, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_maxIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) (.76)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 66, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi2ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) (.47.56)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 51, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi4ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi4ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) (.47.56)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 51, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 1, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, Column: 0 }
+Function:        _ZN4nnet6reduceI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELi5ENS_6Op_addIS4_EEEET_PKS7_T1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>) (.47.56)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 51, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>::operator[](unsigned long)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_types.h, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unsigned int nnet::softmax_idx_from_real_val<ap_ufixed<15, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 1024u>(ap_ufixed<15, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 141, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, nnet::Op_add<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_common.h, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                   Line: 169, Column: 0 }
+Function:        _ZN4nnet14softmax_stableINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj5EEES6_15softmax_config9EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unsigned int nnet::softmax_idx_from_real_val<ap_fixed<18, 8, (ap_q_mode)0, (ap_o_mode)0, 0>, 1024u>(ap_fixed<18, 8, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 141, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, softmax_config9>(hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&, hls::stream<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u>, 0>&)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation_stream.h, 
+                       Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b2.h, Line: 12, Column: 0 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b4.h, Line: 12, Column: 0 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b6.h, Line: 12, Column: 0 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b8.h, Line: 12, Column: 0 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b8
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 36, 
+                   Column: 32 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 87, 
+                   Column: 30 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 90, 
+                   Column: 29 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEENS1_IS5_Lj64EEE7config2EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          res
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 36, 
+                   Column: 32 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 87, 
+                   Column: 30 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 90, 
+                   Column: 29 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj64EEENS1_IS5_Lj32EEE7config4EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          res
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 36, 
+                   Column: 32 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 87, 
+                   Column: 30 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 90, 
+                   Column: 29 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEES6_7config6EEvRN3hls6streamIT_Li0EEERNS9_IT0_Li0EEEPNT1_8weight_tEPNSG_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          res
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 87, 
+                   Column: 30 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_stream.h, Line: 90, 
+                   Column: 29 }
+Function:        _ZN4nnet5denseINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj32EEENS1_IS5_Lj5EEE7config8EEvRN3hls6streamIT_Li0EEERNSA_IT0_Li0EEEPNT1_8weight_tEPNSH_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          res
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 54, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer8_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '80'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 51, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer7_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 48, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer6_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 45, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer5_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 42, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer4_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 39, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer3_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1024'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: firmware/myproject.cpp, Line: 36, Column: 24 }
+Function:        _Z9myprojectRN3hls6streamIN4nnet5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj16EEELi0EEERNS0_INS2_IS6_Lj5EEELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            layer2_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1024'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/w2.h, Line: 12, Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          w2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' reshaping'
+  - String:          ' with factor '
+  - Factor:          '256'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/w4.h, Line: 12, Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          w4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' reshaping'
+  - String:          ' with factor '
+  - Factor:          '512'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/w6.h, Line: 12, Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config6EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          w6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' reshaping'
+  - String:          ' with factor '
+  - Factor:          '256'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/w8.h, Line: 12, Column: 0 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config8EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          w8
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' reshaping'
+  - String:          ' with factor '
+  - Factor:          '40'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            InsufficientAlignment
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Alignment is insufficient, current alignment is '
+  - Align:           '512'
+  - String:          ' byte(s) but '
+  - RequiredAlign:   '1024'
+  - String:          ' is required'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.body13.load.87
+  - ArrayName:       w4.167
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ' '
+...

@@ -1,0 +1,195 @@
+===== COMPLETE FIFO TEMPLATE =====
+source_filename = "fifo_{{T}}.ll"
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+declare i64 @__hlslitesim_fifo_read_i64(i8* %fifo)
+declare void @__hlslitesim_fifo_write_i64(i8* %fifo, i64 %value)
+declare void @__hlslitesim_fifo_read(i8* %fifo, i64* %buffer, i32 %count)
+declare void @__hlslitesim_fifo_write(i8* %fifo, i64* %buffer, i32 %count)
+
+define {{T}} @_autotb_FifoRead_{{T}}({{T}}* %fifo) willreturn {
+entry:
+  %fifo_i8 = bitcast {{T}}* %fifo to i8*
+{%- if N < 64 %}
+  %value_i64 = call i64 @__hlslitesim_fifo_read_i64(i8* %fifo_i8)
+  %value = trunc i64 %value_i64 to {{T}}
+{%- elif N == 64 %}
+  %value = call i64 @__hlslitesim_fifo_read_i64(i8* %fifo_i8)
+{%- else %}
+  %buffer_i64 = alloca i64, i32 {{(-(N // -64))}}, align 8
+  call void @__hlslitesim_fifo_read(i8* %fifo_i8, i64* %buffer_i64, i32 {{(-(N // -64))}})
+  %buffer = bitcast i64* %buffer_i64 to {{T}}*
+  %value = load {{T}}, {{T}}* %buffer
+{%- endif %}
+  ret {{T}} %value
+}
+
+define {{T}} @_autotb_FifoWrite_{{T}}({{T}}* %fifo, {{T}} %value) willreturn {
+entry:
+  %fifo_i8 = bitcast {{T}}* %fifo to i8*
+{%- if N < 64 %}
+  %value_i64 = zext {{T}} %value to i64
+  call void @__hlslitesim_fifo_write_i64(i8* %fifo_i8, i64 %value_i64)
+{%- elif N == 64 %}
+  call void @__hlslitesim_fifo_write_i64(i8* %fifo_i8, i64 %value)
+{%- else %}
+  %buffer_i64 = alloca i64, i32 {{(-(N // -64))}}, align 8
+  %buffer = bitcast i64* %buffer_i64 to {{T}}*
+  store {{T}} %value, {{T}}* %buffer
+  call void @__hlslitesim_fifo_write(i8* %fifo_i8, i64* %buffer_i64, i32 {{(-(N // -64))}})
+{%- endif %}
+  ret {{T}} %value
+}
+
+===== FUNCTION-TEMPLATE APPLICATION CODE =====
+                    )
+
+                    mapper_hw_input_path = (
+                        self.solution.path / f".autopilot/db/mapper_{kernel}.cpp"
+                    )
+                    mapper_hw_path = tempdir / f"mapper_{kernel}.o"
+                    compile_mapper_hw = create_task(
+                        run(
+                            [
+                                CC,
+                                "-std=c++14",
+                                "-I",
+                                xilinx_hls / "include",
+                                "-I",
+                                xilinx_hls / "lnx64/tools/systemc/include",
+                                "-I",
+                                SYSTEMC_ROOT / "include",
+                                "-c",
+                                mapper_hw_input_path,
+                                "-g",
+                                "-fpermissive",
+                                "-o",
+                                mapper_hw_path,
+                            ],
+                        )
+                    )
+
+                    project_object_paths = [
+                        tempdir / f"testbench.{i}.o"
+                        for i, _ in enumerate(project_source_files)
+                    ]
+                    compile_project_files = gather(
+                        *(
+                            compile_project_file(source_file, object_path)
+                            for source_file, object_path in zip(
+                                project_source_files, project_object_paths
+                            )
+                        )
+                    )
+
+                    bitcode = await self.solution.get_bitcode()
+                    link_input_paths = [opt_path]
+                    for function in bitcode.functions:
+                        for template in FUNCTION_TEMPLATES:
+                            generated = template.apply(function, out_dir=tempdir)
+                            if generated is not None:
+                                link_input_paths.append(generated)
+
+                    mapper_ir_input_path = (
+                        self.solution.path / f".autopilot/db/apatb_{kernel}_ir.bc"
+                    )
+                    mapper_ir_path = tempdir / f"apatb_{kernel}_ir.bc"
+                    extract_mapper_ir = await run(
+                        [
+                            LLVM_ROOT / "bin/llvm-extract",
+                            "-func",
+                            f"apatb_{kernel}_ir",
+                            "-recursive",
+                            mapper_ir_input_path,
+                            "-o",
+                            mapper_ir_path,
+                        ],
+                        check=True,
+                    )
+                    link_input_paths.append(mapper_ir_path)
+
+                    opt_pass = await opt_pass
+                    self.add_completed_process(opt_pass)
+                    opt_pass.check_returncode()
+
+                with self.steps[RunnerStep.LINKING_BITCODE]:
+                    link_path = tempdir / "a.o.3.link.bc"
+                    link_bitcode = await run(
+                        [
+                            LLVM_ROOT / "bin/llvm-link",
+                            "--suppress-warnings",
+
+===== FPGA FIFO REFERENCES IN SOLUTION =====
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:8:extern "C" void fpga_fifo_push_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:11:extern "C" void fpga_fifo_pop_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:14:extern "C" bool fpga_fifo_not_empty_10(hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:30:extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:33:extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_util.cpp:36:extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:62:  %4 = call i1 @fpga_fifo_not_empty_32(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:68:  call void @fpga_fifo_pop_32(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:72:  call void @fpga_fifo_push_32(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:103:  %4 = call i1 @fpga_fifo_not_empty_10(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:109:  call void @fpga_fifo_pop_10(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:113:  call void @fpga_fifo_push_10(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:148:declare i1 @fpga_fifo_not_empty_32(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:150:declare i1 @fpga_fifo_not_empty_10(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:152:declare void @fpga_fifo_pop_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:154:declare void @fpga_fifo_pop_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:156:declare void @fpga_fifo_push_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/.autopilot/db/apatb_myproject_ir.ll:158:declare void @fpga_fifo_push_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:62:  %4 = call i1 @fpga_fifo_not_empty_32(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:68:  call void @fpga_fifo_pop_32(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:72:  call void @fpga_fifo_push_32(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:103:  %4 = call i1 @fpga_fifo_not_empty_10(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:109:  call void @fpga_fifo_pop_10(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:113:  call void @fpga_fifo_push_10(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:148:declare i1 @fpga_fifo_not_empty_32(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:150:declare i1 @fpga_fifo_not_empty_10(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:152:declare void @fpga_fifo_pop_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:154:declare void @fpga_fifo_pop_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:156:declare void @fpga_fifo_push_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_ir.ll:158:declare void @fpga_fifo_push_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:8:extern "C" void fpga_fifo_push_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:11:extern "C" void fpga_fifo_pop_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:14:extern "C" bool fpga_fifo_not_empty_10(hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:30:extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:33:extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/autowrap/systemc/apatb_myproject_util.cpp:36:extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:62:  %4 = call i1 @fpga_fifo_not_empty_32(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:68:  call void @fpga_fifo_pop_32(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:72:  call void @fpga_fifo_push_32(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:103:  %4 = call i1 @fpga_fifo_not_empty_10(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:109:  call void @fpga_fifo_pop_10(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:113:  call void @fpga_fifo_push_10(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:148:declare i1 @fpga_fifo_not_empty_32(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:150:declare i1 @fpga_fifo_not_empty_10(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:152:declare void @fpga_fifo_pop_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:154:declare void @fpga_fifo_pop_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:156:declare void @fpga_fifo_push_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_ir.ll:158:declare void @fpga_fifo_push_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:8:extern "C" void fpga_fifo_push_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:11:extern "C" void fpga_fifo_pop_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:14:extern "C" bool fpga_fifo_not_empty_10(hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:30:extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:33:extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc/apatb_myproject_util.cpp:36:extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:62:  %4 = call i1 @fpga_fifo_not_empty_32(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:68:  call void @fpga_fifo_pop_32(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:72:  call void @fpga_fifo_push_32(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:103:  %4 = call i1 @fpga_fifo_not_empty_10(i8* %3)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:109:  call void @fpga_fifo_pop_10(i8* %5, i8* %6)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:113:  call void @fpga_fifo_push_10(i8* %8, i8* %9)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:148:declare i1 @fpga_fifo_not_empty_32(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:150:declare i1 @fpga_fifo_not_empty_10(i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:152:declare void @fpga_fifo_pop_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:154:declare void @fpga_fifo_pop_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:156:declare void @fpga_fifo_push_32(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_ir.ll:158:declare void @fpga_fifo_push_10(i8*, i8*)
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:8:extern "C" void fpga_fifo_push_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:11:extern "C" void fpga_fifo_pop_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:14:extern "C" bool fpga_fifo_not_empty_10(hls::stream<__cosim_T_10__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:30:extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:33:extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/sim/wrapc_pc/apatb_myproject_util.cpp:36:extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {

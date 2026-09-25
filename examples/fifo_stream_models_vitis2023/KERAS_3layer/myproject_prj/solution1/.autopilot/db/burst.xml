@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="InsufficientAlignmentMissed" src_info="" msg_id="214-228" msg_severity="INFO" msg_body="Alignment is insufficient, current alignment is 512 byte(s) but 1024 is required" resolution="214-228" VarName="w4.167" ParentFunc="void nnet::dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config4&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config4::weight_t*, config4::bias_t*)" OrigID="for.body13.load.87" OrigDirection="read"/>
+</VitisHLS:BurstInfo>
+

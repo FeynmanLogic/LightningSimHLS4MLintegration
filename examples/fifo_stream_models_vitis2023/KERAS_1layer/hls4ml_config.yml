@@ -1,0 +1,28 @@
+Backend: Vitis
+ClockPeriod: 5
+ClockUncertainty: 27%
+HLSConfig:
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 4
+    Strategy: Resource
+IOType: io_stream
+InputShapes:
+  input_1:
+  - 10
+KerasH5: KERAS_1layer_weights.h5
+KerasJson: KERAS_1layer.json
+OutputDir: /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer
+OutputShapes:
+  layer5_out:
+  - 1
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 3c7efdc3
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

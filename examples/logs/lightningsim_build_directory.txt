@@ -1,0 +1,4 @@
+d /tmp/lightningsim.zd6nn8bx -> 
+f /tmp/lightningsim.zd6nn8bx/testbench_myproject -> 
+l /tmp/lightningsim.zd6nn8bx/tb_data -> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/../../tb_data
+l /tmp/lightningsim.zd6nn8bx/weights -> /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/../../firmware/weights

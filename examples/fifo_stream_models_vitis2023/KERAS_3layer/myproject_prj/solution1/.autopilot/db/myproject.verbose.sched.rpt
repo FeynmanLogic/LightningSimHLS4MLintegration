@@ -1,0 +1,271 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Mon Sep 21 23:26:37 2026
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.415 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       63|       63|  0.315 us|  0.315 us|   18|   18|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer2_out = alloca i64 1"   --->   Operation 19 'alloca' 'layer2_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer3_out = alloca i64 1"   --->   Operation 20 'alloca' 'layer3_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer4_out = alloca i64 1"   --->   Operation 21 'alloca' 'layer4_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%layer5_out = alloca i64 1"   --->   Operation 22 'alloca' 'layer5_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%layer6_out = alloca i64 1"   --->   Operation 23 'alloca' 'layer6_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer7_out = alloca i64 1"   --->   Operation 24 'alloca' 'layer7_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 1> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%layer8_out = alloca i64 1"   --->   Operation 25 'alloca' 'layer8_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 80> <Depth = 1> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln57 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i256 %input_1, i1024 %layer2_out, i4090 %w2" [firmware/myproject.cpp:57]   --->   Operation 26 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln57 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i256 %input_1, i1024 %layer2_out, i4090 %w2" [firmware/myproject.cpp:57]   --->   Operation 27 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln59 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out, i1024 %layer3_out" [firmware/myproject.cpp:59]   --->   Operation 28 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln59 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out, i1024 %layer3_out" [firmware/myproject.cpp:59]   --->   Operation 29 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln61 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,32u>,config4>, i1024 %layer3_out, i512 %layer4_out, i8185 %w4" [firmware/myproject.cpp:61]   --->   Operation 30 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln61 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,32u>,config4>, i1024 %layer3_out, i512 %layer4_out, i8185 %w4" [firmware/myproject.cpp:61]   --->   Operation 31 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln63 = call void @relu<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,relu_config5>, i512 %layer4_out, i512 %layer5_out" [firmware/myproject.cpp:63]   --->   Operation 32 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln63 = call void @relu<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,relu_config5>, i512 %layer4_out, i512 %layer5_out" [firmware/myproject.cpp:63]   --->   Operation 33 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 34 [2/2] (0.00ns)   --->   "%call_ln65 = call void @dense<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,config6>, i512 %layer5_out, i512 %layer6_out, i4090 %w6" [firmware/myproject.cpp:65]   --->   Operation 34 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln65 = call void @dense<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,config6>, i512 %layer5_out, i512 %layer6_out, i4090 %w6" [firmware/myproject.cpp:65]   --->   Operation 35 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln67 = call void @relu<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,relu_config7>, i512 %layer6_out, i512 %layer7_out" [firmware/myproject.cpp:67]   --->   Operation 36 'call' 'call_ln67' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln67 = call void @relu<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,32u>,relu_config7>, i512 %layer6_out, i512 %layer7_out" [firmware/myproject.cpp:67]   --->   Operation 37 'call' 'call_ln67' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln69 = call void @dense<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,5u>,config8>, i512 %layer7_out, i80 %layer8_out, i634 %w8" [firmware/myproject.cpp:69]   --->   Operation 38 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 39 [1/2] (0.00ns)   --->   "%call_ln69 = call void @dense<array<ap_fixed,32u>,array<ap_fixed<16,6,5,3,0>,5u>,config8>, i512 %layer7_out, i80 %layer8_out, i634 %w8" [firmware/myproject.cpp:69]   --->   Operation 39 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln71 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config9>, i80 %layer8_out, i80 %layer9_out, i11 %exp_table, i18 %invert_table" [firmware/myproject.cpp:71]   --->   Operation 40 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 41 [1/2] (0.00ns)   --->   "%call_ln71 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config9>, i80 %layer8_out, i80 %layer9_out, i11 %exp_table, i18 %invert_table" [firmware/myproject.cpp:71]   --->   Operation 41 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 42 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln14 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_7" [firmware/myproject.cpp:14]   --->   Operation 42 'specdataflowpipeline' 'specdataflowpipeline_ln14' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 43 [1/1] (0.00ns)   --->   "%spectopmodule_ln7 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [firmware/myproject.cpp:7]   --->   Operation 43 'spectopmodule' 'spectopmodule_ln7' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %input_1, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %input_1"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer9_out, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 47 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i80 %layer9_out"   --->   Operation 47 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 48 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out, i1024 %layer2_out"   --->   Operation 48 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 50 [1/1] (0.00ns)   --->   "%empty_38 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out, i1024 %layer3_out"   --->   Operation 50 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 52 [1/1] (0.00ns)   --->   "%empty_39 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i512 %layer4_out, i512 %layer4_out"   --->   Operation 52 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer4_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 54 [1/1] (0.00ns)   --->   "%empty_40 = specchannel i32 @_ssdm_op_SpecChannel, void @layer5_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i512 %layer5_out, i512 %layer5_out"   --->   Operation 54 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer5_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 56 [1/1] (0.00ns)   --->   "%empty_41 = specchannel i32 @_ssdm_op_SpecChannel, void @layer6_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i512 %layer6_out, i512 %layer6_out"   --->   Operation 56 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer6_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 58 [1/1] (0.00ns)   --->   "%empty_42 = specchannel i32 @_ssdm_op_SpecChannel, void @layer7_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i512 %layer7_out, i512 %layer7_out"   --->   Operation 58 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %layer7_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 60 [1/1] (0.00ns)   --->   "%empty_43 = specchannel i32 @_ssdm_op_SpecChannel, void @layer8_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer8_out, i80 %layer8_out"   --->   Operation 60 'specchannel' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer8_out, void @empty_0, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 62 [1/1] (0.00ns)   --->   "%specmemcore_ln57 = specmemcore void @_ssdm_op_SpecMemCore, i4090 %w2, i64 666, i64 38, i64 18446744073709551615" [firmware/myproject.cpp:57]   --->   Operation 62 'specmemcore' 'specmemcore_ln57' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 63 [1/1] (0.00ns)   --->   "%specmemcore_ln61 = specmemcore void @_ssdm_op_SpecMemCore, i8185 %w4, i64 666, i64 38, i64 18446744073709551615" [firmware/myproject.cpp:61]   --->   Operation 63 'specmemcore' 'specmemcore_ln61' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 64 [1/1] (0.00ns)   --->   "%specmemcore_ln65 = specmemcore void @_ssdm_op_SpecMemCore, i4090 %w6, i64 666, i64 38, i64 18446744073709551615" [firmware/myproject.cpp:65]   --->   Operation 64 'specmemcore' 'specmemcore_ln65' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 65 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i634 %w8, i64 666, i64 38, i64 18446744073709551615" [firmware/myproject.cpp:69]   --->   Operation 65 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 66 [1/1] (0.00ns)   --->   "%ret_ln73 = ret" [firmware/myproject.cpp:73]   --->   Operation 66 'ret' 'ret_ln73' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,231 @@
+===== GENERATED UTIL SOURCE =====
+#include <iostream>
+#include "hls_stream.h"
+#include "hls_directio.h"
+
+using namespace std;
+
+struct __cosim_T_10__ {char data[10];};
+extern "C" void fpga_fifo_push_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+  fifo->write(*val);
+}
+extern "C" void fpga_fifo_pop_10(__cosim_T_10__* val, hls::stream<__cosim_T_10__>* fifo) {
+  *val = fifo->read();
+}
+extern "C" bool fpga_fifo_not_empty_10(hls::stream<__cosim_T_10__>* fifo) {
+  return !fifo->empty();
+}
+extern "C" bool fpga_fifo_exist_10(hls::stream<__cosim_T_10__>* fifo) {
+  return fifo->exist();
+}
+extern "C" bool fpga_direct_valid_10(hls::directio<__cosim_T_10__>* direct) {
+  return direct->valid();
+}
+extern "C" void fpga_direct_load_10(__cosim_T_10__* val, hls::directio<__cosim_T_10__>* direct) {
+  *val = direct->read();
+}
+extern "C" void fpga_direct_store_10(__cosim_T_10__* val, hls::directio<__cosim_T_10__>* direct) {
+  direct->write(*val);
+}
+struct __cosim_T_32__ {char data[32];};
+extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+  fifo->write(*val);
+}
+extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+  *val = fifo->read();
+}
+extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {
+  return !fifo->empty();
+}
+extern "C" bool fpga_fifo_exist_32(hls::stream<__cosim_T_32__>* fifo) {
+  return fifo->exist();
+}
+extern "C" bool fpga_direct_valid_32(hls::directio<__cosim_T_32__>* direct) {
+  return direct->valid();
+}
+extern "C" void fpga_direct_load_32(__cosim_T_32__* val, hls::directio<__cosim_T_32__>* direct) {
+  *val = direct->read();
+}
+extern "C" void fpga_direct_store_32(__cosim_T_32__* val, hls::directio<__cosim_T_32__>* direct) {
+  direct->write(*val);
+}
+
+===== PROJECT SOURCE DISCOVERY REFERENCES =====
+357:            project_source_files = [
+369:            if not project_source_files:
+403:                        self.solution.path / f".autopilot/db/mapper_{kernel}.cpp"
+429:                        for i, _ in enumerate(project_source_files)
+435:                                project_source_files, project_object_paths
+
+===== RUNNER LINES 300-470 =====
+                    *project_file.cflags,
+                    "-c",
+                    project_file.path.absolute(),
+                    "-g",
+                    "-O3",
+                    "-o",
+                    object_path,
+                ],
+                cwd=self.solution.path,
+            )
+            compilation_processes.append(compilation)
+            if compilation.returncode != 0:
+                return compilation_processes
+
+            kernel_cxx_mangled_prefix = f"_Z{len(kernel)}{kernel}"
+            kernel_target_symbol = f"apatb_{kernel}_ir"
+            with open(object_path, "rb") as object_fp:
+                elffile = ELFFile(object_fp)
+                kernel_source_symbols = [
+                    symbol.name
+                    for section in elffile.iter_sections(type="SHT_SYMTAB")
+                    for symbol in section.iter_symbols()
+                    if symbol["st_info"]["type"] in ("STT_NOTYPE", "STT_FUNC")
+                    and symbol["st_info"]["bind"] == "STB_GLOBAL"
+                    and (
+                        symbol.name == kernel
+                        or symbol.name.startswith(kernel_cxx_mangled_prefix)
+                    )
+                ]
+
+            symbol_rename = await run(
+                [
+                    OBJCOPY,
+                    "--weaken",
+                    *(
+                        arg
+                        for kernel_source_symbol in kernel_source_symbols
+                        for arg in (
+                            "--redefine-sym",
+                            f"{kernel_source_symbol}={kernel_target_symbol}",
+                        )
+                    ),
+                    object_path,
+                ],
+            )
+            compilation_processes.append(symbol_rename)
+            return compilation_processes
+
+        # sneaky linker issues happen when LD_LIBRARY_PATH is set
+        os.environ.pop("LD_LIBRARY_PATH", None)
+
+        with self.steps[RunnerStep.ANALYZING_PROJECT]:
+            xilinx_hls = Path(environ["XILINX_HLS"])
+            kernel = self.solution.kernel_name
+            testbench_argv = self.solution.testbench_argv
+            ldflags = self.solution.ldflags
+            project_files = self.solution.project_files
+            project_source_files = [
+                file for file in project_files if file.type == ProjectFile.Type.SOURCE
+            ]
+            project_binary_files = [
+                file for file in project_files if file.type == ProjectFile.Type.BINARY
+            ]
+            project_directories = [
+                file
+                for file in project_files
+                if file.type == ProjectFile.Type.DIRECTORY
+            ]
+
+            if not project_source_files:
+                raise RuntimeError("no testbench files found")
+
+        with self.steps[RunnerStep.WAITING_FOR_BITCODE]:
+            bitcode_path = await self.solution.get_bitcode_path()
+
+        with self.get_temporary_directory_context() as output_dir_str:
+            output_dir = Path(output_dir_str)
+
+            with self.get_temporary_directory_context() as tempdir_str:
+                tempdir = Path(tempdir_str)
+
+                if self.debug:
+                    print(f"Intermediate objects are being written to {tempdir_str}")
+                    print(f"Build artifacts are being written to {output_dir_str}")
+
+                with self.steps[RunnerStep.GENERATING_SUPPORT_CODE]:
+                    opt_path = tempdir / "a.o.3.opt.bc"
+                    opt_pass = create_task(
+                        run(
+                            [
+                                LLVM_ROOT / "bin/opt",
+                                f"--mtriple={llvm.get_default_triple()}",
+                                f"--load={LLVM_ROOT / 'lib/LLVMHLSLiteSim.so'}",
+                                "--enable-new-pm=0",
+                                "--hlslitesim",
+                                bitcode_path,
+                                "-o",
+                                opt_path,
+                            ],
+                        )
+                    )
+
+                    mapper_hw_input_path = (
+                        self.solution.path / f".autopilot/db/mapper_{kernel}.cpp"
+                    )
+                    mapper_hw_path = tempdir / f"mapper_{kernel}.o"
+                    compile_mapper_hw = create_task(
+                        run(
+                            [
+                                CC,
+                                "-std=c++14",
+                                "-I",
+                                xilinx_hls / "include",
+                                "-I",
+                                xilinx_hls / "lnx64/tools/systemc/include",
+                                "-I",
+                                SYSTEMC_ROOT / "include",
+                                "-c",
+                                mapper_hw_input_path,
+                                "-g",
+                                "-fpermissive",
+                                "-o",
+                                mapper_hw_path,
+                            ],
+                        )
+                    )
+
+                    project_object_paths = [
+                        tempdir / f"testbench.{i}.o"
+                        for i, _ in enumerate(project_source_files)
+                    ]
+                    compile_project_files = gather(
+                        *(
+                            compile_project_file(source_file, object_path)
+                            for source_file, object_path in zip(
+                                project_source_files, project_object_paths
+                            )
+                        )
+                    )
+
+                    bitcode = await self.solution.get_bitcode()
+                    link_input_paths = [opt_path]
+                    for function in bitcode.functions:
+                        for template in FUNCTION_TEMPLATES:
+                            generated = template.apply(function, out_dir=tempdir)
+                            if generated is not None:
+                                link_input_paths.append(generated)
+
+                    mapper_ir_input_path = (
+                        self.solution.path / f".autopilot/db/apatb_{kernel}_ir.bc"
+                    )
+                    mapper_ir_path = tempdir / f"apatb_{kernel}_ir.bc"
+                    extract_mapper_ir = await run(
+                        [
+                            LLVM_ROOT / "bin/llvm-extract",
+                            "-func",
+                            f"apatb_{kernel}_ir",
+                            "-recursive",
+                            mapper_ir_input_path,
+                            "-o",
+                            mapper_ir_path,
+                        ],
+                        check=True,
+                    )
+                    link_input_paths.append(mapper_ir_path)
+
+                    opt_pass = await opt_pass
+                    self.add_completed_process(opt_pass)
+                    opt_pass.check_returncode()
+
+                with self.steps[RunnerStep.LINKING_BITCODE]:

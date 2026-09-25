@@ -1,0 +1,176 @@
+===== RUNNER LINES 60-115 =====
+    mapper: PatternMapper
+    template: Template
+
+    def apply(self, function: llvm.ValueRef, out_dir: Path):
+        match = self.input.fullmatch(function.name)
+        if match is None:
+            return
+
+        params = self.mapper(match.groupdict())
+        path = out_dir / self.output.format(**params)
+        if path.exists():
+            return
+
+        path.write_text(self.template.render(len=len, **params))
+        return path
+
+
+FUNCTION_TEMPLATES = [
+    FunctionTemplate(
+        input=re.compile(r"_autotb_Fifo(Read|Write)_i(?P<N>\d+)"),
+        output="fifo_{T}.ll",
+        mapper=lambda groupdict: {
+            "N": int(groupdict["N"]),
+            "T": f'i{groupdict["N"]}',
+        },
+        template=Template((TEMPLATE_DIR / "fifo.ll.jinja").read_text()),
+    ),
+    FunctionTemplate(
+        input=re.compile(
+            r"_ssdm_op_(Read|Write|ReadReq|WriteReq|WriteResp).m_axi.(?P<name>\w*i(?P<N>\d+)\w*)"
+        ),
+        output="m_axi_{name}.ll",
+        mapper=lambda groupdict: {
+            "N": int(groupdict["N"]),
+            "T": f'i{groupdict["N"]}',
+            "name": groupdict["name"],
+        },
+        template=Template((TEMPLATE_DIR / "m_axi.ll.jinja").read_text()),
+    ),
+]
+
+
+@dataclass(slots=True)
+class CompletedProcess:
+    args: Sequence[str]
+    returncode: int
+    output: str
+
+    @property
+    def command(self):
+        return shlex.join(self.args)
+
+    def check_returncode(self):
+        if self.returncode == 0:
+            return
+        message = (
+
+===== FIFO TEMPLATE REFERENCES =====
+73:        path.write_text(self.template.render(len=len, **params))
+85:        template=Template((TEMPLATE_DIR / "fifo.ll.jinja").read_text()),
+
+===== LINKER SECTION 470-580 =====
+                with self.steps[RunnerStep.LINKING_BITCODE]:
+                    link_path = tempdir / "a.o.3.link.bc"
+                    link_bitcode = await run(
+                        [
+                            LLVM_ROOT / "bin/llvm-link",
+                            "--suppress-warnings",
+                            *link_input_paths,
+                            "-o",
+                            link_path,
+                        ],
+                    )
+                    self.add_completed_process(link_bitcode)
+                    link_bitcode.check_returncode()
+
+                with self.steps[RunnerStep.COMPILING_BITCODE]:
+                    object_path = tempdir / "a.o.3.o"
+                    compile_bitcode = await run(
+                        [
+                            LLVM_ROOT / "bin/clang",
+                            "-Wno-override-module",
+                            "-c",
+                            link_path,
+                            "-g",
+                            "-o",
+                            object_path,
+                        ],
+                    )
+                    self.add_completed_process(compile_bitcode)
+                    compile_bitcode.check_returncode()
+
+                with self.steps[RunnerStep.LINKING_TESTBENCH]:
+                    output_path = output_dir / f"testbench_{kernel}"
+                    compile_mapper_hw = await compile_mapper_hw
+                    self.add_completed_process(compile_mapper_hw)
+                    compile_mapper_hw.check_returncode()
+                    compile_project_files = [
+                        compilation_process
+                        for compilation_processes in await compile_project_files
+                        for compilation_process in compilation_processes
+                    ]
+                    self.add_completed_processes(compile_project_files)
+                    for compilation in compile_project_files:
+                        compilation.check_returncode()
+                    link_objects = " ".join(
+                        str(path).replace(" ", "\\ ")
+                        for path in (*project_object_paths, object_path, mapper_hw_path)
+                    )
+                    extra_ld_flags = shlex.join(
+                        str(flag)
+                        for flag in (
+                            *ldflags,
+                            "-L",
+                            TEMPLATE_DIR,
+                            "-llightningsimrt",
+                            "-pthread",
+                            "-g",
+                            "-O3",
+                            "-flto",
+                            SYSTEMC_ROOT / "lib-linux64" / "libsystemc.a",
+                        )
+                    )
+                    link_testbench = await run(
+                        [
+                            "make",
+                            "-B",
+                            "-f",
+                            xilinx_hls / "include/Makefile.sysc.rules",
+                            f"AUTOPILOT_ROOT={xilinx_hls}",
+                            f'AUTOPILOT_TOOL={xilinx_hls / "lnx64/tools"}',
+                            f"AUTOPILOT_MACH=lnx64",
+                            f"CXX={CXX}",
+                            f"TARGET={output_path}",
+                            f"ObjDir={tempdir_str}",
+                            f"OBJECTS={link_objects}",
+                            f"ExtraLDFlags={extra_ld_flags}",
+                            "__SIM_MATHHLS__=1",
+                            "__SIM_FPO__=1",
+                            "__SIM_FFT__=1",
+                            "__SIM_FIR__=1",
+                            "__SIM_DDS__=1",
+                            output_path,
+                        ],
+                        cwd=self.solution.path.parent.parent,
+                    )
+                    self.add_completed_process(link_testbench)
+                    link_testbench.check_returncode()
+                    for file in project_binary_files:
+                        shutil.copy2(file.path, output_dir)
+                    for directory in project_directories:
+                        os.symlink(directory.path.absolute(), output_dir / directory.path.name)
+
+            with self.steps[RunnerStep.RUNNING_TESTBENCH]:
+                trace_reader_fd, trace_writer_fd = os.pipe()
+                try:
+                    try:
+                        os.set_inheritable(trace_writer_fd, True)
+                        testbench_process = await create_subprocess_exec(
+                            output_path,
+                            *testbench_argv,
+                            cwd=output_dir,
+                            stdout=PIPE,
+                            stderr=STDOUT,
+                            close_fds=False,
+                            env={
+                                **os.environ,
+                                "HLSLITESIM_TRACE_FD": f"{trace_writer_fd}",
+                            },
+                        )
+                    finally:
+                        os.close(trace_writer_fd)
+                except:
+
+===== FIFO SYMBOLS IN RUNTIME =====

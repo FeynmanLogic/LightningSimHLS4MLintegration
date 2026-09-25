@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 13:47:00 MDT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Mon Sep 21 18:32:59 2026
+# Process ID         : 1571957
+# Current directory  : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp
+# Command line       : vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file           : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file       : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On         : ece-labsrv
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 9.8 (Plow)
+# Processor Detail   : Intel(R) Xeon(R) Gold 6448H
+# CPU Frequency      : 798.837 MHz
+# CPU Physical cores : 128
+# CPU Logical cores  : 256
+# Host memory        : 403573 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 403573 MB
+# Available Virtual  : 181778 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

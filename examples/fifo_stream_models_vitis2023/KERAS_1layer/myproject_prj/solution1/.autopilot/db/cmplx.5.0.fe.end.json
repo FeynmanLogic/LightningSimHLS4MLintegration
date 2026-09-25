@@ -1,0 +1,62 @@
+{
+    "1": {
+        "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 10>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 32>, config2>",
+        "file": "nnet_dense_stream.h",
+        "fileloc": "82",
+        "instructions": "410",
+        "total_instructions": "410",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "G": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "22",
+        "total_instructions": "804",
+        "calls": "1 2 3 4",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "relu<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 32>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 32>, relu_config3>",
+        "file": "nnet_activation_stream.h",
+        "fileloc": "39",
+        "instructions": "166",
+        "total_instructions": "166",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 32>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 1>, config4>",
+        "file": "nnet_dense_stream.h",
+        "fileloc": "82",
+        "instructions": "176",
+        "total_instructions": "176",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "G": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "sigmoid<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 1>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 1>, sigmoid_config5>",
+        "file": "nnet_activation_stream.h",
+        "fileloc": "65",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1"
+        }
+    }
+}

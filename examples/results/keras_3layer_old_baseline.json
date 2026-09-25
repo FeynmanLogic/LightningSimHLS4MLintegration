@@ -1,0 +1,25 @@
+{
+  "fifo_id_to_name_map": {},
+  "evaluations": [
+    {
+      "fifo_sizes": {},
+      "fifo_config_inline_pragmas": {},
+      "fifo_config_tcl_commands": {},
+      "deadlock": false,
+      "latency": 15,
+      "bram_usage_total": 0,
+      "timestamp": 2882605.054059511,
+      "is_pareto_optimal": true
+    },
+    {
+      "fifo_sizes": {},
+      "fifo_config_inline_pragmas": {},
+      "fifo_config_tcl_commands": {},
+      "deadlock": false,
+      "latency": 15,
+      "bram_usage_total": 0,
+      "timestamp": 2882605.05417102,
+      "is_pareto_optimal": false
+    }
+  ]
+}

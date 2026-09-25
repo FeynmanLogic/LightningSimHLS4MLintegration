@@ -1,0 +1,61 @@
+{
+    "configuration": {
+        "models": [
+            "keras_3layer"
+        ],
+        "part": "xc7z020clg400-1",
+        "io_type": "io_stream",
+        "profiling_fifo_depth": 100000,
+        "python_version": "3.10.20",
+        "hls4ml_version": "0.1.0"
+    },
+    "results": [
+        {
+            "model": "keras_3layer",
+            "example_model": "KERAS_3layer.json",
+            "status": "PASSED",
+            "output_dir": "/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer",
+            "part": "xc7z020clg400-1",
+            "io_type": "io_stream",
+            "profiling_fifo_depth": 100000,
+            "conversion_seconds": 0.032102004159241915,
+            "optimizer_runtime_seconds": 2802.6618972690776,
+            "project_write_seconds": 2.005078298971057,
+            "number_of_internal_fifos": 7,
+            "total_initial_fifo_depth": 7,
+            "total_optimized_fifo_depth": 8,
+            "fifo_depth_reduction": -1,
+            "fifo_depth_reduction_percent": -14.285714285714286,
+            "fifo_depths": {
+                "layer2_out": {
+                    "initial": 1,
+                    "optimized": 1
+                },
+                "layer3_out": {
+                    "initial": 1,
+                    "optimized": 1
+                },
+                "layer4_out": {
+                    "initial": 1,
+                    "optimized": 1
+                },
+                "layer5_out": {
+                    "initial": 1,
+                    "optimized": 1
+                },
+                "layer6_out": {
+                    "initial": 1,
+                    "optimized": 1
+                },
+                "layer7_out": {
+                    "initial": 1,
+                    "optimized": 2
+                },
+                "layer8_out": {
+                    "initial": 1,
+                    "optimized": 1
+                }
+            }
+        }
+    ]
+}

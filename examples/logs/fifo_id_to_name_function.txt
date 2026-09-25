@@ -1,0 +1,27 @@
+
+    if provided_options:
+        options = ", ".join(provided_options)
+        raise ValueError(f"--baseline does not accept solver options: {options}.")
+
+
+def fifo_id_to_name_map_from_env(sim_env: LSEnv) -> dict[int, str]:
+    fifo_id_to_name: dict[int, str] = {}
+    set_ids = set()
+    set_names = set()
+    for fifo in sim_env.fifos:
+        # fifo_id_to_name[fifo.id] = fifo.name
+        fifo_id = fifo.id
+        fifo_name = fifo.name
+        # check that fifo_id is not already in the map
+        if fifo_id in set_ids:
+            raise ValueError(f"Duplicate FIFO ID found: {fifo_id}")
+        # check that fifo_name is not already in the map
+        if fifo_name in set_names:
+            raise ValueError(f"Duplicate FIFO name found: {fifo_name}")
+        fifo_id_to_name[fifo_id] = fifo_name
+        set_ids.add(fifo_id)
+        set_names.add(fifo_name)
+    return fifo_id_to_name
+
+
+def main(args: argparse.Namespace) -> None:

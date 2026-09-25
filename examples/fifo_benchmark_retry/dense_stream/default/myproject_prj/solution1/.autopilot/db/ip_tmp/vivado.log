@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 13:47:00 MDT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Mon Sep 21 18:32:59 2026
+# Process ID         : 1571957
+# Current directory  : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp
+# Command line       : vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file           : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file       : /nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_retry/dense_stream/default/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On         : ece-labsrv
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 9.8 (Plow)
+# Processor Detail   : Intel(R) Xeon(R) Gold 6448H
+# CPU Frequency      : 798.837 MHz
+# CPU Physical cores : 128
+# CPU Logical cores  : 256
+# Host memory        : 403573 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 403573 MB
+# Available Virtual  : 181778 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace
+create_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 4484 ; free virtual = 172929
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/amd/xilinx/2025.2.1/data/ip'.
+create_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 4532 ; free virtual = 172895
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_fpext_32ns_64_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_fpext_32ns_64_4_no_dsp_1_ip'...
+create_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 4701 ; free virtual = 173065
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_fexp_32ns_32ns_32_31_full_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 18:33:42 2026...

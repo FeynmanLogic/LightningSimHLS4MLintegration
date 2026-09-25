@@ -1,0 +1,30 @@
+{
+    "layer2_out": {
+        "initial": 1,
+        "optimized": 1
+    },
+    "layer3_out": {
+        "initial": 1,
+        "optimized": 1
+    },
+    "layer4_out": {
+        "initial": 1,
+        "optimized": 1
+    },
+    "layer5_out": {
+        "initial": 1,
+        "optimized": 1
+    },
+    "layer6_out": {
+        "initial": 1,
+        "optimized": 1
+    },
+    "layer7_out": {
+        "initial": 1,
+        "optimized": 2
+    },
+    "layer8_out": {
+        "initial": 1,
+        "optimized": 1
+    }
+}

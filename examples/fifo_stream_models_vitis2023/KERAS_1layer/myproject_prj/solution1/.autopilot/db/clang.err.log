@@ -1,0 +1,18 @@
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:10:
+firmware/nnet_utils/nnet_activation.h:402:36: warning: unexpected pragma argument 'softmax', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS allocation instances = softmax<CONFIG_T> limit = CONFIG_T::parallelization_factor function
+                                   ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_dense.h:7:
+firmware/nnet_utils/nnet_dense_resource.h:33:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:107:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:189:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+4 warnings generated.

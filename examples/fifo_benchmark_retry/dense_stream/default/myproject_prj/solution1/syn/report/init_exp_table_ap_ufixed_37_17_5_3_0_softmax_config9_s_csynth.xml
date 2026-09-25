@@ -1,0 +1,194 @@
+<profile>
+
+<ReportVersion>
+<Version>2025.2.1</Version>
+</ReportVersion>
+
+<UserAssignments>
+<unit>ns</unit>
+<ProductFamily>zynq</ProductFamily>
+<Part>xc7z020-clg400-1</Part>
+<TopModelName>init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s</TopModelName>
+<TargetClockPeriod>5.00</TargetClockPeriod>
+<ClockUncertainty>1.35</ClockUncertainty>
+<FlowTarget>vivado</FlowTarget>
+</UserAssignments>
+
+<PerformanceEstimates>
+<PipelineType>loop pipeline stp</PipelineType>
+<SummaryOfTimingAnalysis>
+<unit>ns</unit>
+<EstimatedClockPeriod>3.853</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<unit>clock cycles</unit>
+<Best-caseLatency>1084</Best-caseLatency>
+<Average-caseLatency>1084</Average-caseLatency>
+<Worst-caseLatency>1084</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.420 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.420 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.420 us</Worst-caseRealTimeLatency>
+<Interval-min>1025</Interval-min>
+<Interval-max>1025</Interval-max>
+<PerformancePragma>-</PerformancePragma>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<VITIS_LOOP_151_1>
+<Slack>3.65</Slack>
+<TripCount>1024</TripCount>
+<isPerfectNested>0</isPerfectNested>
+<Latency>1082</Latency>
+<AbsoluteTimeLatency>5410</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>60</PipelineDepth>
+<PerformancePragma>-</PerformancePragma>
+<InstanceList>
+</InstanceList>
+</VITIS_LOOP_151_1>
+</SummaryOfLoopLatency>
+<SummaryOfViolations>
+<IssueType>Timing Violation</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:151</SourceLocation>
+<SummaryOfLoopViolations>
+<VITIS_LOOP_151_1>
+<Name>VITIS_LOOP_151_1</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:151</SourceLocation>
+</VITIS_LOOP_151_1>
+</SummaryOfLoopViolations>
+</SummaryOfViolations>
+</PerformanceEstimates>
+
+<AreaEstimates>
+<Resources>
+<DSP>7</DSP>
+<FF>5686</FF>
+<LUT>5058</LUT>
+<BRAM_18K>0</BRAM_18K>
+<URAM>0</URAM>
+</Resources>
+<AvailableResources>
+<BRAM_18K>280</BRAM_18K>
+<DSP>220</DSP>
+<FF>106400</FF>
+<LUT>53200</LUT>
+<URAM>0</URAM>
+</AvailableResources>
+</AreaEstimates>
+
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>init_exp_table&lt;ap_ufixed&lt;37, 17, 5, 3, 0&gt;, softmax_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>table_out_address0</name>
+<Object>table_out</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>10</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>table_out_ce0</name>
+<Object>table_out</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>table_out_we0</name>
+<Object>table_out</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>table_out_d0</name>
+<Object>table_out</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+
+</profile>

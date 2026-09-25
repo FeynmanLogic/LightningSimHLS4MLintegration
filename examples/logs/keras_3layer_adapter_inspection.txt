@@ -1,0 +1,269 @@
+===== MYPROJECT HEADER =====
+#ifndef MYPROJECT_H_
+#define MYPROJECT_H_
+
+#include "ap_fixed.h"
+#include "ap_int.h"
+#include "hls_stream.h"
+
+#include "defines.h"
+
+
+// Prototype of top level function for C-synthesis
+void myproject(
+    hls::stream<input_t> &input_1,
+    hls::stream<result_t> &layer9_out
+);
+
+// hls-fpga-machine-learning insert emulator-defines
+
+
+#endif
+
+===== TOP-LEVEL SOURCE =====
+#include <iostream>
+
+#include "myproject.h"
+#include "parameters.h"
+
+
+void myproject(
+    hls::stream<input_t> &input_1,
+    hls::stream<result_t> &layer9_out
+) {
+
+    // hls-fpga-machine-learning insert IO
+    #pragma HLS INTERFACE axis port=input_1,layer9_out 
+    #pragma HLS DATAFLOW
+
+    // hls-fpga-machine-learning insert load weights
+#ifndef __SYNTHESIS__
+    static bool loaded_weights = false;
+    if (!loaded_weights) {
+        nnet::load_weights_from_txt<model_default_t, 1024>(w2, "w2.txt");
+        nnet::load_weights_from_txt<model_default_t, 64>(b2, "b2.txt");
+        nnet::load_weights_from_txt<model_default_t, 2048>(w4, "w4.txt");
+        nnet::load_weights_from_txt<model_default_t, 32>(b4, "b4.txt");
+        nnet::load_weights_from_txt<model_default_t, 1024>(w6, "w6.txt");
+        nnet::load_weights_from_txt<model_default_t, 32>(b6, "b6.txt");
+        nnet::load_weights_from_txt<model_default_t, 160>(w8, "w8.txt");
+        nnet::load_weights_from_txt<model_default_t, 5>(b8, "b8.txt");
+        loaded_weights = true;    }
+#endif
+    // ****************************************
+    // NETWORK INSTANTIATION
+    // ****************************************
+
+    // hls-fpga-machine-learning insert layers
+
+    hls::stream<layer2_t> layer2_out("layer2_out");
+    #pragma HLS STREAM variable=layer2_out depth=1
+
+    hls::stream<layer3_t> layer3_out("layer3_out");
+    #pragma HLS STREAM variable=layer3_out depth=1
+
+    hls::stream<layer4_t> layer4_out("layer4_out");
+    #pragma HLS STREAM variable=layer4_out depth=1
+
+    hls::stream<layer5_t> layer5_out("layer5_out");
+    #pragma HLS STREAM variable=layer5_out depth=1
+
+    hls::stream<layer6_t> layer6_out("layer6_out");
+    #pragma HLS STREAM variable=layer6_out depth=1
+
+    hls::stream<layer7_t> layer7_out("layer7_out");
+    #pragma HLS STREAM variable=layer7_out depth=2
+
+    hls::stream<layer8_t> layer8_out("layer8_out");
+    #pragma HLS STREAM variable=layer8_out depth=1
+
+    nnet::dense<input_t, layer2_t, config2>(input_1, layer2_out, w2, b2); // fc1_relu
+
+    nnet::relu<layer2_t, layer3_t, relu_config3>(layer2_out, layer3_out); // fc1_relu_relu
+
+    nnet::dense<layer3_t, layer4_t, config4>(layer3_out, layer4_out, w4, b4); // fc2_relu
+
+    nnet::relu<layer4_t, layer5_t, relu_config5>(layer4_out, layer5_out); // fc2_relu_relu
+
+    nnet::dense<layer5_t, layer6_t, config6>(layer5_out, layer6_out, w6, b6); // fc3_relu
+
+    nnet::relu<layer6_t, layer7_t, relu_config7>(layer6_out, layer7_out); // fc3_relu_relu
+
+    nnet::dense<layer7_t, layer8_t, config8>(layer7_out, layer8_out, w8, b8); // output_softmax
+
+    nnet::softmax<layer8_t, result_t, softmax_config9>(layer8_out, layer9_out); // output_softmax_softmax
+
+}
+
+
+===== TESTBENCH TOP CALLS =====
+10:#include "firmware/myproject.h"
+62:      hls::stream<input_t> input_1("input_1");
+63:      nnet::copy_data<float, input_t, 0, 16>(in, input_1);
+64:      hls::stream<result_t> layer9_out("layer9_out");
+67:            myproject(input_1,layer9_out);
+78:                nnet::print_result<result_t, 5>(layer9_out, std::cout, true);
+83:            nnet::print_result<result_t, 5>(layer9_out, fout);
+92:            hls::stream<input_t> input_1("input_1");
+93:            nnet::fill_zero<input_t, 16>(input_1);
+94:            hls::stream<result_t> layer9_out("layer9_out");
+97:            myproject(input_1,layer9_out);
+100:            nnet::print_result<result_t, 5>(layer9_out, std::cout, true);
+103:            nnet::print_result<result_t, 5>(layer9_out, fout);
+
+===== BUILD TCL =====
+132:set RTL_COSIM_RESULTS "./tb_data/rtl_cosim_results.log"
+139:set_top ${project_name}
+140:add_files firmware/${project_name}.cpp -cflags "-std=c++0x"
+141:add_files -tb ${project_name}_test.cpp -cflags "-std=c++0x"
+142:add_files -tb firmware/weights
+143:add_files -tb tb_data
+145:    open_solution -reset "solution1"
+147:    open_solution "solution1"
+151:set_part $part
+169:    csynth_design
+174:if {$opt(cosim)} {
+177:    add_files -tb ${project_name}_test.cpp -cflags "-std=c++0x -DRTL_SIM"
+180:    cosim_design -trace_level all -setup
+199:        puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_axi_cosim.rpt r]]
+201:        puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_cosim.rpt r]]
+213:        puts "ERROR: - RTL-cosim log: $RTL_COSIM_RESULTS"
+
+===== STREAM DECLARATIONS =====
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:8:    hls::stream<input_t> &input_1,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:9:    hls::stream<result_t> &layer9_out
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:36:    hls::stream<layer2_t> layer2_out("layer2_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:37:    #pragma HLS STREAM variable=layer2_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:39:    hls::stream<layer3_t> layer3_out("layer3_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:40:    #pragma HLS STREAM variable=layer3_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:42:    hls::stream<layer4_t> layer4_out("layer4_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:43:    #pragma HLS STREAM variable=layer4_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:45:    hls::stream<layer5_t> layer5_out("layer5_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:46:    #pragma HLS STREAM variable=layer5_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:48:    hls::stream<layer6_t> layer6_out("layer6_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:49:    #pragma HLS STREAM variable=layer6_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:51:    hls::stream<layer7_t> layer7_out("layer7_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:52:    #pragma HLS STREAM variable=layer7_out depth=2
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:54:    hls::stream<layer8_t> layer8_out("layer8_out");
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.cpp:55:    #pragma HLS STREAM variable=layer8_out depth=1
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.h:13:    hls::stream<input_t> &input_1,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/myproject.h:14:    hls::stream<result_t> &layer9_out
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:17:template <class data_T, class res_T, typename CONFIG_T> void linear(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:39:template <class data_T, class res_T, typename CONFIG_T> void relu(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:65:template <class data_T, class res_T, typename CONFIG_T> void sigmoid(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:108:void softmax_latency(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:169:void softmax_stable(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:248:void softmax_legacy(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:324:void softmax_argmax(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:351:template <class data_T, class res_T, typename CONFIG_T> void softmax(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:374:template <class data_T, class res_T, typename CONFIG_T> void tanh(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:417:void unary_lut(hls::stream<data_T> &data, hls::stream<res_T> &res, typename CONFIG_T::table_t table[CONFIG_T::table_size]) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:445:void hard_sigmoid(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:470:template <class data_T, class res_T, typename CONFIG_T> void hard_tanh(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:500:void leaky_relu(hls::stream<data_T> &data, param_T alpha, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:526:void thresholded_relu(hls::stream<data_T> &data, param_T theta, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:552:template <class data_T, class res_T, typename CONFIG_T> void softplus(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:593:template <class data_T, class res_T, typename CONFIG_T> void softsign(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:634:void elu(hls::stream<data_T> &data, param_T alpha, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:674:template <class data_T, class res_T, typename CONFIG_T> void elu(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:682:template <class data_T, class res_T, typename CONFIG_T> void selu(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:727:void prelu(hls::stream<data_T> &data, const param_T alpha[CONFIG_T::n_in], hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:752:void binary_tanh(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_activation_stream.h:781:void ternary_tanh(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_batchnorm_stream.h:16:void normalize(hls::stream<data_T> &data, hls::stream<res_T> &res, typename CONFIG_T::scale_t scale[CONFIG_T::n_scale_bias],
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_batchnorm_stream.h:54:void normalize_binary_tanh(hls::stream<data_T> &data, hls::stream<nnet::array<ap_uint<1>, CONFIG_T::n_scale_bias>> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_batchnorm_stream.h:83:void normalize_ternary_tanh(hls::stream<data_T> &data, hls::stream<nnet::array<ap_int<2>, CONFIG_T::n_scale_bias>> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv1d_stream.h:12:void conv_1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv2d_stream.h:15:    hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv2d_stream.h:42:    hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv2d_stream.h:68:    hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:80:void mult_buffer(hls::stream<typename data_T::value_type> data_window[CONFIG_T::kernel_size * CONFIG_T::n_chan],
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:81:                 res_T &res_pack, hls::stream<res_T> &res_stream, unsigned &outputs_ready,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:125:                            hls::stream<typename data_T::value_type> data_window[CONFIG_T::kernel_size * CONFIG_T::n_chan],
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:126:                            hls::stream<res_T> &res, res_T &res_pack, unsigned &outputs_ready,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:255:    hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_conv_stream.h:325:    const data_T &in_elem, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_cropping_stream.h:10:void cropping1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_cropping_stream.h:29:void cropping2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_da_wrappers.h:11:dense(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_dense_stream.h:28:void data_prepare(hls::stream<data_T> &data_stream, typename data_T::value_type data[CONFIG_T::n_in]) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_dense_stream.h:53:void res_write(typename res_T::value_type res[CONFIG_T::n_out], hls::stream<res_T> &res_stream) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_dense_stream.h:82:void dense(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_embed_stream.h:11:void embedding(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:145:template <class srcType, class dstType, size_t SIZE> void convert_data(srcType *src, hls::stream<dstType> &dst) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:155:template <class srcType, class dstType, size_t SIZE> void convert_data(hls::stream<srcType> &src, dstType *dst) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:174:template <class data_T, class save_T> void save_output_array(hls::stream<data_T> &data, save_T *ptr, size_t layer_size) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:216:template <class data_T> void save_layer_output(hls::stream<data_T> &data, const char *layer_name, size_t layer_size) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:259:void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:292:template <class res_T, size_t SIZE> void print_result(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:306:template <class data_T, size_t SIZE> void fill_zero(hls::stream<data_T> &data) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:357:template <class in_T, class out_T, int N_IN> void change_type(hls::stream<in_T> &in, hls::stream<out_T> &out) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:359:    hls::stream<out_T> input_trunc;
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_helpers.h:365:template <class data_T, int N_IN> void hls_stream_debug(hls::stream<data_T> &data, hls::stream<data_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_image_stream.h:9:template <class data_T, typename CONFIG_T> void resize_nearest(hls::stream<data_T> &image, hls::stream<data_T> &resized) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:11:void add(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:34:void subtract(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:57:void multiply(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:80:void average(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:103:void maximum(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:127:void minimum(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:151:void concatenate3d_0(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:193:void concatenate3d_1(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:232:void concatenate3d_2(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:262:void concatenate3d(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:273:void concatenate2d_0(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:309:void concatenate2d_1(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:336:void concatenate2d(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_merge_stream.h:345:void concatenate1d(hls::stream<input1_T> &data1, hls::stream<input2_T> &data2, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_padding_stream.h:8:template <class res_T, typename CONFIG_T> void fill_zero(hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_padding_stream.h:18:template <class data_T, class res_T, typename CONFIG_T> void fill_data(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_padding_stream.h:30:void zeropad1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_padding_stream.h:48:void zeropad2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:33:                            hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:96:void pooling2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:124:void compute_pool_buffer_1d(const data_T &in_elem, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:177:void pooling1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:228:void global_pooling2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_pooling_stream.h:287:void global_pooling1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_recurrent.h:303:void lstm_stack(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_recurrent.h:648:void gru_stack(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:12:void depthwise_conv_1d_buffer_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:32:void depthwise_conv_1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:42:void pointwise_conv_1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:74:void separable_conv_1d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:88:    hls::stream<dw_res_T> depthwise_res;
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv1d_stream.h:90:    #pragma HLS STREAM variable=depthwise_res depth=res_depth
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:14:    hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:56:void pointwise_conv_2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:97:    hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:107:void separable_conv_2d_cl(hls::stream<data_T> &data, hls::stream<res_T> &res,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:122:    hls::stream<dw_res_T> depthwise_res;
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv2d_stream.h:124:    #pragma HLS STREAM variable=depthwise_res depth=res_depth
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:12:void depthwise_mult_buffer(hls::stream<typename data_T::value_type> data_window[CONFIG_T::kernel_size * CONFIG_T::n_chan],
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:13:                           res_T &res_pack, hls::stream<res_T> &res_stream, unsigned &outputs_ready,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:57:    const data_T &in_elem, hls::stream<typename data_T::value_type> data_window[CONFIG_T::kernel_size * CONFIG_T::n_chan],
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:58:    hls::stream<res_T> &res, res_T &res_pack, unsigned &outputs_ready,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:83:void pointwise_mult_buffer(const data_T &data_pack, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:118:void compute_depthwise_output_buffer_1d(const data_T &in_elem, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_sepconv_stream.h:175:                                        hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_snn_stream.h:85:void if_neuron(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_snn_stream.h:132:void lif_neuron(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_snn_stream.h:183:void snn_readout(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:20:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:44:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2, hls::stream<res_T> &res3) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:72:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2, hls::stream<res_T> &res3,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:73:                  hls::stream<res_T> &res4) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:105:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2, hls::stream<res_T> &res3,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:106:                  hls::stream<res_T> &res4, hls::stream<res_T> &res5) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:142:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2, hls::stream<res_T> &res3,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:143:                  hls::stream<res_T> &res4, hls::stream<res_T> &res5, hls::stream<res_T> &res6) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:183:void clone_stream(hls::stream<data_T> &data, hls::stream<res_T> &res1, hls::stream<res_T> &res2, hls::stream<res_T> &res3,
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:184:                  hls::stream<res_T> &res4, hls::stream<res_T> &res5, hls::stream<res_T> &res6, hls::stream<res_T> &res7) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:227:template <class data_T, class res_T, int N> void repack_stream(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:289:void broadcast_stream_1x1xC(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:311:void broadcast_stream_HxWx1(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_stream.h:329:void broadcast_stream(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_transpose_stream.h:11:typename std::enable_if<CONFIG_T::dims == 2, void>::type transpose(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/nnet_utils/nnet_transpose_stream.h:40:typename std::enable_if<CONFIG_T::dims != 2, void>::type transpose(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/ap_types/hls_stream.h:67: * This file contains a C++ model of hls::stream.
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/hls4ml_fifo_optimizer_results/keras_3layer/firmware/ap_types/hls_stream.h:77:// C level simulation models for hls::stream

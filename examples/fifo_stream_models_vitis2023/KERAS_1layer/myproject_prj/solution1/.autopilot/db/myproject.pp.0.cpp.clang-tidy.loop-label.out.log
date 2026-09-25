@@ -1,0 +1,424 @@
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28597:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28597:7: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29571:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29571:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29585:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29585:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29599:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29599:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:31198:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:31198:7: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33183:9: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_27_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33183:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33195:9: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_39_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33195:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33212:9: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_56_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33212:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56153:5: warning: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^~~
+    VITIS_LOOP_265_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56153:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56163:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^~~
+    VITIS_LOOP_275_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56163:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56174:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56174:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56181:5: warning: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_293_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56181:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56183:9: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_295_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56183:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56195:5: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^~~
+    VITIS_LOOP_307_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56195:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56197:9: warning: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_309_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56197:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56212:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_324_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56212:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56232:5: warning: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_344_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56232:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56233:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56233:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56248:5: warning: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_360_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56248:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56255:5: warning: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_367_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56255:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56565:5: warning: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_136_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56565:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56566:9: warning: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_137_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56566:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56587:5: warning: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_158_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56587:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56588:9: warning: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_159_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56588:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56735:2: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_31_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56735:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56747:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_43_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56747:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56761:5: warning: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_57_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56761:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56788:5: warning: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_84_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56788:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56818:5: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_114_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56818:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56855:5: warning: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^~~
+    VITIS_LOOP_151_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56855:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56871:5: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^~~
+    VITIS_LOOP_167_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56871:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56904:5: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_200_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56904:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56917:5: warning: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_213_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56917:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56950:5: warning: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_246_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56950:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56959:5: warning: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_255_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56959:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56972:5: warning: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_268_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56972:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56979:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_275_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56979:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56992:5: warning: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_288_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56992:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57029:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57029:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57034:5: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_330_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57034:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57035:9: warning: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^~~
+        VITIS_LOOP_331_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57035:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57052:5: warning: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_348_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57052:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57065:5: warning: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_361_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57065:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57073:5: warning: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_369_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57073:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57109:5: warning: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^~~
+    VITIS_LOOP_405_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57109:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57111:2: warning: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+ for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+ ^~~
+ VITIS_LOOP_407_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57111:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57113:2: warning: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+ for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+ ^~~
+ VITIS_LOOP_409_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57113:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57118:13: warning: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^~~
+            VITIS_LOOP_414_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57118:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57131:5: warning: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_427_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57131:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57161:5: warning: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_457_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57161:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57188:2: warning: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_484_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57188:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57202:2: warning: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_498_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57202:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57218:5: warning: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_514_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57218:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57236:5: warning: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_532_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57236:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57253:5: warning: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_549_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57253:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57270:5: warning: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_566_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57270:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57300:5: warning: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_596_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57300:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57319:5: warning: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_615_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57319:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57349:5: warning: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_645_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57349:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57368:5: warning: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_664_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57368:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57398:5: warning: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_694_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57398:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57425:5: warning: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_721_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57425:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57453:2: warning: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_749_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57453:2: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57483:5: warning: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_779_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57483:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57512:5: warning: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_808_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57512:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57532:5: warning: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_828_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57532:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57777:9: warning: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_229_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57777:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57784:13: warning: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_236_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57784:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57793:9: warning: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_245_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57793:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57802:13: warning: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^~~
+            VITIS_LOOP_254_4: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57802:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57806:17: warning: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^~~
+                VITIS_LOOP_258_5: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57806:17: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57817:9: warning: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_269_6: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57817:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57821:13: warning: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_273_7: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57821:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57845:9: warning: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^~~
+        VITIS_LOOP_297_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57845:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57849:13: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^~~
+            VITIS_LOOP_301_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57849:13: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57868:9: warning: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^~~
+        VITIS_LOOP_320_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57868:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58092:9: warning: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_211_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58092:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58101:9: warning: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_220_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58101:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58206:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58206:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58211:9: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_330_2: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58211:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58219:9: warning: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_338_3: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58219:9: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58822:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58896:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58978:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59151:5: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^~~
+    VITIS_LOOP_14_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59151:5: note: FIX-IT applied suggested code changes
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59211:9: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^~~
+        VITIS_LOOP_74_1: 
+/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_stream_models_vitis2023/KERAS_1layer/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59211:9: note: FIX-IT applied suggested code changes

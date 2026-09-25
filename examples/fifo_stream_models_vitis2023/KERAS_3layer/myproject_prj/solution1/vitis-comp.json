@@ -1,0 +1,9 @@
+{
+  "name": "myproject_prj-solution1",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "."
+  }
+}

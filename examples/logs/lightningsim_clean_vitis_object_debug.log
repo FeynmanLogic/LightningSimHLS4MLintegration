@@ -1,0 +1,33 @@
+[23:04:09] [INFO] LightningSim: Analyzing project...
+warning: ignoring debug info with an invalid version (0) in 
+[23:04:10] [INFO] LightningSim: Compiling project...
+[23:04:34] [INFO] LightningSim: Running testbench...
+[23:04:35] [INFO] LightningSim: Parsing schedule...
+[23:04:35] [INFO] LightningSim: Resolving schedule from trace...
+Intermediate objects are being written to /tmp/lightningsim.0b3qgc2g
+Build artifacts are being written to /tmp/lightningsim.7q3hj0j0
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/lightningsim", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/main.py", line 540, in main
+    return run(run_simple(solution_dir, debug=args.debug))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/main.py", line 441, in run_simple
+    trace = await runner.run()
+            ^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/runner.py", line 628, in run
+    trace = await resolve_trace(trace, progress_callback=step.set_progress)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/trace_file.py", line 671, in resolve_trace
+    raise ValueError("kernel did not run. Did the testbench call it?")
+ValueError: kernel did not run. Did the testbench call it?

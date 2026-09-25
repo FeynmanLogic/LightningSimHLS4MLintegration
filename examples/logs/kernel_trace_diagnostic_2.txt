@@ -1,0 +1,133 @@
+===== KERNEL CHECK LOGIC =====
+                        if basic_block in frame.blocks_seen:
+                            frame.blocks_seen.clear()
+                        frame.blocks_seen.add(basic_block)
+                    
+                        current_resolved_block = ResolvedBlock(
+                            basic_block, 0, frame.dynamic_stage, frame.dynamic_stage - basic_block.length
+                        )
+
+                        frame.current_block = current_resolved_block
+
+                        if not basic_block.events:
+                            frame.current_block = None
+                            if basic_block.terminator.opcode in ("ret", "return"):
+                                frame.returns.append(
+                                    (
+                                        basic_block.parent.name,
+                                        frame.latest_dynamic_stage,
+                                    )
+                                )
+                                while frame.returns:
+                                    builder.return_(*frame.returns.pop())
+                                stack.pop()
+                                if not stack:
+                                    # we only handle the first top-level call for now
+                                    return True
+                    elif entry.type == "loop_bb":
+                        assert current_loop is not None
+                        if current_loop.start_stage is None: #this is setting the dynamic start stage of the loop to the dynamic start stage of this loop_bb (only on the first one)
+                            current_loop.start_stage = frame.dynamic_stage - basic_block.length
+                        resolved_block = ResolvedBlock(
+                            basic_block, 0, frame.dynamic_stage, frame.dynamic_stage - basic_block.length
+                        )
+                        current_loop.blocks.append(resolved_block)
+
+            if time() - start_time >= deadline:
+                return False
+
+        i = len(trace)
+        return True
+
+    if not len(trace):
+        raise ValueError("kernel did not run. Did the testbench call it?")
+
+    loop = get_running_loop()
+    progress_callback(0.0)
+    while not await loop.run_in_executor(None, do_sync_work_batch):
+        progress_callback(i / len(trace))
+    progress_callback(1.0)
+
+    if stack:
+        raise ValueError("incomplete trace. Did the testbench terminate abruptly?")
+
+    return ResolvedTrace(
+        compiled=builder.finish(),
+        params=SimulationParameters(
+            fifo_depths={
+                stream.id: depth for stream, depth in trace.channel_depths.items()
+            },
+            fifo_widths={
+                stream.id: fifo_widths.get(stream.id, 0)
+                for stream in trace.channel_depths.keys()
+            },
+            axi_delays={
+                interface.address: latency
+                for interface, latency in trace.axi_latencies.items()
+            },
+            ap_ctrl_chain_top_port_count=ap_ctrl_chain_top_port_count,
+        ),
+        fifos=[
+            ResolvedStream(fifo.id, fifo.name, fifo_widths.get(fifo.id, 0))
+            for fifo in trace.channel_depths.keys()
+        ],
+        axi_interfaces=list(trace.axi_latencies.keys()),
+        line_count=trace.line_count,
+        byte_count=trace.byte_count,
+    )
+
+===== MAPPER CALL =====
+unsigned int ap_apatb_model_input_cap_bc;
+static AESL_RUNTIME_BC __xlx_model_input_V_size_Reader("../tv/stream_size/stream_size_in_model_input.dat");
+unsigned int ap_apatb_layer9_out_cap_bc;
+static AESL_RUNTIME_BC __xlx_layer9_out_V_size_Reader("../tv/stream_size/stream_size_out_layer9_out.dat");
+using hls::sim::Byte;
+struct __cosim_s32__ { char data[32]; };
+struct __cosim_s10__ { char data[10]; };
+struct __cosim_s16__ { char data[16]; };
+extern "C" void myproject(__cosim_s32__*, __cosim_s10__*);
+extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_model_input, volatile void * __xlx_apatb_param_layer9_out) {
+using hls::sim::createStream;
+auto* smodel_input = createStream((hls::stream<__cosim_s32__>*)__xlx_apatb_param_model_input);
+  //Create input buffer for layer9_out
+  ap_apatb_layer9_out_cap_bc = __xlx_layer9_out_V_size_Reader.read_size();
+  __cosim_s10__* __xlx_layer9_out_input_buffer= new __cosim_s10__[ap_apatb_layer9_out_cap_bc];
+auto* slayer9_out = createStream((hls::stream<__cosim_s10__>*)__xlx_apatb_param_layer9_out);
+  // DUT call
+  myproject(smodel_input->data<__cosim_s32__>(), slayer9_out->data<__cosim_s10__>());
+smodel_input->transfer((hls::stream<__cosim_s32__>*)__xlx_apatb_param_model_input);
+slayer9_out->transfer((hls::stream<__cosim_s10__>*)__xlx_apatb_param_layer9_out);
+}
+
+===== RUNNER DEBUG HANDLING =====
+23:from tempfile import TemporaryDirectory, mkdtemp
+263:    def __init__(self, solution: Solution, debug=False):
+265:        self.debug = debug
+285:    def get_temporary_directory_context(self):
+286:        if self.debug:
+288:        return TemporaryDirectory(prefix="lightningsim.")
+375:        with self.get_temporary_directory_context() as output_dir_str:
+378:            with self.get_temporary_directory_context() as tempdir_str:
+381:                if self.debug:
+
+===== SYNTHESIZED BITCODE FILES =====
+a.g.0.bc
+a.g.1.bc
+a.g.2.bc
+a.g.2.prechk.bc
+a.g.bc
+a.g.ld.0.bc
+a.g.ld.1.lower.bc
+a.g.ld.2.m1.bc
+a.g.ld.3.fpc.bc
+a.g.ld.4.m2.bc
+a.g.ld.5.gdce.bc
+a.g.lto.bc
+a.o.1.bc
+a.o.1.tmp.bc
+a.o.2.bc
+a.o.3.bc
+apatb_myproject_ir.bc
+a.pp.bc
+myproject.bc
+myproject.g.bc

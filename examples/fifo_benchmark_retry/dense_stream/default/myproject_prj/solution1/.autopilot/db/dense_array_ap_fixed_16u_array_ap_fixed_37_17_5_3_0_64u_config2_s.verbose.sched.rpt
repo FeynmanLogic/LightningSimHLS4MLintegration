@@ -1,0 +1,261 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s'
+================================================================
+* Date:           Mon Sep 21 18:25:19 2026
+
+* Version:        2025.2.1 (Build 6397637 on Mar 18 2026)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.624 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        8|        8|  40.000 ns|  40.000 ns|    8|    8|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.51>
+ST_1 : Operation 10 [1/1] ( I:0.51ns O:0.51ns )   --->   "%model_input_read = read i256 @_ssdm_op_Read.axis.volatile.i256P128A, i256 %model_input" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 10 'read' 'model_input_read' <Predicate = true> <Delay = 0.51> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.40> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%data = trunc i256 %model_input_read" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 11 'trunc' 'data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%data_124 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 16" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 12 'partselect' 'data_124' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_1 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 32" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 13 'partselect' 'data_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%data_2 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 48" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 14 'partselect' 'data_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%data_3 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 64" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 15 'partselect' 'data_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%data_4 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 80" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 16 'partselect' 'data_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%data_5 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 96" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 17 'partselect' 'data_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%data_6 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 112" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 18 'partselect' 'data_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%data_7 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 128" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 19 'partselect' 'data_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%data_8 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 144" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 20 'partselect' 'data_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%data_9 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 160" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 21 'partselect' 'data_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%data_10 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 176" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 22 'partselect' 'data_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%data_11 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 192" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 23 'partselect' 'data_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%data_12 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 208" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 24 'partselect' 'data_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%data_13 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 224" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 25 'partselect' 'data_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%data_14 = partselect i16 @_ssdm_op_PartSelect.i16.i256.i256, i256 %model_input_read, i256 240" [firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93]   --->   Operation 26 'partselect' 'data_14' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.34>
+ST_2 : Operation 27 [7/7] (3.34ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 27 'call' 'call_ret' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.62>
+ST_3 : Operation 28 [6/7] (3.62ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 28 'call' 'call_ret' <Predicate = true> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 3.62>
+ST_4 : Operation 29 [5/7] (3.62ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 29 'call' 'call_ret' <Predicate = true> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.62>
+ST_5 : Operation 30 [4/7] (3.62ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 30 'call' 'call_ret' <Predicate = true> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 3.62>
+ST_6 : Operation 31 [3/7] (3.62ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 31 'call' 'call_ret' <Predicate = true> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 3.62>
+ST_7 : Operation 32 [2/7] (3.62ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 32 'call' 'call_ret' <Predicate = true> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 2.07>
+ST_8 : Operation 33 [1/7] (2.07ns)   --->   "%call_ret = call i2368 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>, i16 %data, i16 %data_124, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 33 'call' 'call_ret' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%res = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 34 'extractvalue' 'res' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%res_1 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 35 'extractvalue' 'res_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%res_2 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 36 'extractvalue' 'res_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%res_3 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 37 'extractvalue' 'res_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%res_4 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 38 'extractvalue' 'res_4' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%res_5 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 39 'extractvalue' 'res_5' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%res_6 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 40 'extractvalue' 'res_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%res_7 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 41 'extractvalue' 'res_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%res_8 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 42 'extractvalue' 'res_8' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%res_9 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 43 'extractvalue' 'res_9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%res_54 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 44 'extractvalue' 'res_54' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%res_55 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 45 'extractvalue' 'res_55' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%res_56 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 46 'extractvalue' 'res_56' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%res_57 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 47 'extractvalue' 'res_57' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%res_58 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 48 'extractvalue' 'res_58' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%res_59 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 49 'extractvalue' 'res_59' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%res_60 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 50 'extractvalue' 'res_60' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%res_61 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 51 'extractvalue' 'res_61' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%res_62 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 52 'extractvalue' 'res_62' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%res_63 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 53 'extractvalue' 'res_63' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%res_64 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 54 'extractvalue' 'res_64' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%res_65 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 55 'extractvalue' 'res_65' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%res_66 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 56 'extractvalue' 'res_66' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%res_67 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 57 'extractvalue' 'res_67' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 58 [1/1] (0.00ns)   --->   "%res_68 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 58 'extractvalue' 'res_68' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 59 [1/1] (0.00ns)   --->   "%res_69 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 59 'extractvalue' 'res_69' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%res_70 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 60 'extractvalue' 'res_70' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 61 [1/1] (0.00ns)   --->   "%res_71 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 61 'extractvalue' 'res_71' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 62 [1/1] (0.00ns)   --->   "%res_72 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 62 'extractvalue' 'res_72' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%res_73 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 63 'extractvalue' 'res_73' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 64 [1/1] (0.00ns)   --->   "%res_74 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 64 'extractvalue' 'res_74' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 65 [1/1] (0.00ns)   --->   "%res_75 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 65 'extractvalue' 'res_75' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 66 [1/1] (0.00ns)   --->   "%res_76 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 66 'extractvalue' 'res_76' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 67 [1/1] (0.00ns)   --->   "%res_77 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 67 'extractvalue' 'res_77' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 68 [1/1] (0.00ns)   --->   "%res_78 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 68 'extractvalue' 'res_78' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 69 [1/1] (0.00ns)   --->   "%res_79 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 69 'extractvalue' 'res_79' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 70 [1/1] (0.00ns)   --->   "%res_80 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 70 'extractvalue' 'res_80' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 71 [1/1] (0.00ns)   --->   "%res_81 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 71 'extractvalue' 'res_81' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "%res_82 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 72 'extractvalue' 'res_82' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (0.00ns)   --->   "%res_83 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 73 'extractvalue' 'res_83' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%res_84 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 74 'extractvalue' 'res_84' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%res_85 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 75 'extractvalue' 'res_85' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%res_86 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 76 'extractvalue' 'res_86' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%res_87 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 77 'extractvalue' 'res_87' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%res_88 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 78 'extractvalue' 'res_88' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%res_89 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 79 'extractvalue' 'res_89' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%res_90 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 80 'extractvalue' 'res_90' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%res_91 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 81 'extractvalue' 'res_91' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%res_92 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 82 'extractvalue' 'res_92' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%res_93 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 83 'extractvalue' 'res_93' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%res_94 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 84 'extractvalue' 'res_94' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%res_95 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 85 'extractvalue' 'res_95' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%res_96 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 86 'extractvalue' 'res_96' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "%res_97 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 87 'extractvalue' 'res_97' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "%res_98 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 88 'extractvalue' 'res_98' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%res_99 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 89 'extractvalue' 'res_99' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%res_100 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 90 'extractvalue' 'res_100' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%res_101 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 91 'extractvalue' 'res_101' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%res_102 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 92 'extractvalue' 'res_102' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%res_103 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 93 'extractvalue' 'res_103' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 94 [1/1] (0.00ns)   --->   "%res_104 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 94 'extractvalue' 'res_104' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 95 [1/1] (0.00ns)   --->   "%res_105 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 95 'extractvalue' 'res_105' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 96 [1/1] (0.00ns)   --->   "%res_106 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 96 'extractvalue' 'res_106' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 97 [1/1] (0.00ns)   --->   "%res_107 = extractvalue i2368 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 97 'extractvalue' 'res_107' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 1.82>
+ST_9 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2368 %layer2_out, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 98 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %model_input, void @empty_9, i32 1, i32 1, void @empty_10, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 99 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 100 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i2368 @_ssdm_op_BitConcatenate.i2368.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37.i37, i37 %res_107, i37 %res_106, i37 %res_105, i37 %res_104, i37 %res_103, i37 %res_102, i37 %res_101, i37 %res_100, i37 %res_99, i37 %res_98, i37 %res_97, i37 %res_96, i37 %res_95, i37 %res_94, i37 %res_93, i37 %res_92, i37 %res_91, i37 %res_90, i37 %res_89, i37 %res_88, i37 %res_87, i37 %res_86, i37 %res_85, i37 %res_84, i37 %res_83, i37 %res_82, i37 %res_81, i37 %res_80, i37 %res_79, i37 %res_78, i37 %res_77, i37 %res_76, i37 %res_75, i37 %res_74, i37 %res_73, i37 %res_72, i37 %res_71, i37 %res_70, i37 %res_69, i37 %res_68, i37 %res_67, i37 %res_66, i37 %res_65, i37 %res_64, i37 %res_63, i37 %res_62, i37 %res_61, i37 %res_60, i37 %res_59, i37 %res_58, i37 %res_57, i37 %res_56, i37 %res_55, i37 %res_54, i37 %res_9, i37 %res_8, i37 %res_7, i37 %res_6, i37 %res_5, i37 %res_4, i37 %res_3, i37 %res_2, i37 %res_1, i37 %res" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 100 'bitconcatenate' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 101 [1/1] ( I:1.82ns O:1.82ns )   --->   "%write_ln77 = write void @_ssdm_op_Write.ap_fifo.volatile.i2368P0A, i2368 %layer2_out, i2368 %p_s" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 101 'write' 'write_ln77' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2368> <Depth = 1> <FIFO>
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%ret_ln101 = ret" [firmware/nnet_utils/nnet_dense_stream.h:101]   --->   Operation 102 'ret' 'ret_ln101' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 0.518ns
+The critical path consists of the following:
+	axis read operation ('model_input_read', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) on port 'model_input' (firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [5]  (0.518 ns)
+
+ <State 2>: 3.349ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.349 ns)
+
+ <State 3>: 3.624ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.624 ns)
+
+ <State 4>: 3.624ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.624 ns)
+
+ <State 5>: 3.624ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.624 ns)
+
+ <State 6>: 3.624ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.624 ns)
+
+ <State 7>: 3.624ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (3.624 ns)
+
+ <State 8>: 2.077ns
+The critical path consists of the following:
+	'call' operation 2368 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<37, 17, 5, 3, 0>, config2>' [22]  (2.077 ns)
+
+ <State 9>: 1.825ns
+The critical path consists of the following:
+	fifo write operation ('write_ln77', firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) on port 'layer2_out' (firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) [88]  (1.825 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

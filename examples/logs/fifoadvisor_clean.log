@@ -1,0 +1,54 @@
+warning: ignoring debug info with an invalid version (0) in 
+Analyzing project...
+Waiting for bitcode to be generated...
+Generating support code...
+Linking bitcode...
+Compiling bitcode...
+Linking testbench...
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/fifo_advisor/opt_env.py", line 48, in __init__
+    with open(os.path.join(vitis_hls_solution_dir, "trace.pkl"), "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/nethome/dkulkarni47/LightningSimHLS4MLintegration/examples/fifo_benchmark_vitis2024/dense_stream/default/myproject_prj/solution1/trace.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/fifo-advisor", line 6, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/fifo_advisor/main.py", line 327, in cli
+    main(args)
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/fifo_advisor/main.py", line 231, in main
+    sim_env = LSEnv(solution_dir)
+              ^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/fifo_advisor/opt_env.py", line 86, in __init__
+    self.trace_base: ResolvedTrace = asyncio.run(runner.run())  # type: ignore
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/runner.py", line 555, in run
+    link_testbench.check_returncode()
+  File "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/lib/python3.12/site-packages/lightningsim/runner.py", line 125, in check_returncode
+    raise RuntimeError(message)
+RuntimeError: command make -B -f /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/include/Makefile.sysc.rules AUTOPILOT_ROOT=/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1 AUTOPILOT_TOOL=/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/lnx64/tools AUTOPILOT_MACH=lnx64 CXX=x86_64-conda-linux-gnu-c++ TARGET=/tmp/lightningsim.93xuj93r/testbench_myproject ObjDir=/tmp/lightningsim.6njyj7qg 'OBJECTS=/tmp/lightningsim.6njyj7qg/testbench.0.o /tmp/lightningsim.6njyj7qg/testbench.1.o /tmp/lightningsim.6njyj7qg/a.o.3.o /tmp/lightningsim.6njyj7qg/mapper_myproject.o' 'ExtraLDFlags=-L /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/share/lightningsim/templates -llightningsimrt -pthread -g -O3 -flto /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/share/lightningsim/systemc/lib-linux64/libsystemc.a' __SIM_MATHHLS__=1 __SIM_FPO__=1 __SIM_FFT__=1 __SIM_FIR__=1 __SIM_DDS__=1 /tmp/lightningsim.93xuj93r/testbench_myproject returned non-zero exit status 2 with output:
+>    Build using "/nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-c++"
+>    Generating /tmp/lightningsim.93xuj93r/testbench_myproject
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: /tmp/lightningsim.6njyj7qg/a.o.3.o: in function `streamcpy_hls.p0class.hls::stream<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, 0>':
+> llvm-link:(.text+0x7f734): undefined reference to `fpga_fifo_not_empty_10'
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: llvm-link:(.text+0x7f750): undefined reference to `fpga_fifo_pop_10'
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: llvm-link:(.text+0x7f778): undefined reference to `fpga_fifo_push_10'
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: /tmp/lightningsim.6njyj7qg/a.o.3.o: in function `streamcpy_hls.p0class.hls::stream<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16>, 0>':
+> llvm-link:(.text+0x7f7a4): undefined reference to `fpga_fifo_not_empty_32'
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: llvm-link:(.text+0x7f7c0): undefined reference to `fpga_fifo_pop_32'
+> /nethome/dkulkarni47/.conda/envs/fifo-advisor-clean/bin/x86_64-conda-linux-gnu-ld: llvm-link:(.text+0x7f81f): undefined reference to `fpga_fifo_push_32'
+> collect2: error: ld returned 1 exit status
+> make: *** [/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/include/Makefile.sysc.rules:350: /tmp/lightningsim.93xuj93r/testbench_myproject] Error 1
+FIFOAdvisor exit status: 1
