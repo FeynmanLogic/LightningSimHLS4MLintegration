@@ -117,12 +117,5 @@ This keeps LightningSim as an optional post-processing step while minimizing cha
 
 ---
 
-## Future Work
 
-* Validate the workflow on a Linux machine.
-* Evaluate integration with the hls4ml Vitis backend.
-* Investigate tighter integration with LightningSim's ability to execute in parallel with HLS synthesis, rather than only after synthesis has completed.
-* Package the helper functionality with hls4ml to simplify installation and usage.
-
----
 
